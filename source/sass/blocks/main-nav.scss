@@ -1,0 +1,100 @@
+.main-nav {
+  position: relative;
+
+  @include vp-1199 {
+    order: -1;
+    flex-basis: 33%;
+  }
+}
+// контейнер кнопки
+.main-nav__toggle {
+  display: none;
+
+  @include vp-1199 {
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(50%);
+    z-index: 2;
+    display: block;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+// бурегер
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 26px;
+  height: 19px;
+  background-image: url("../img/svg/menu.svg");
+}
+
+.main-nav--closed .site-list__item {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.main-nav--opened {
+  z-index: 3;
+}
+
+// крестик
+.main-nav--opened .main-nav__toggle {
+  left: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background-color: $color-default-project;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// навигация при нажатии бургера
+.main-nav--opened .site-list {
+  @include vp-1199 {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px 0;
+    width: 100%;
+  }
+}
+
+// .main-nav--nojs {
+//   z-index: 3;
+// }
+
+// .main-nav--nojs .main-nav__toggle {
+//   display: none;
+// }
+
+// .main-nav--nojs .site-list {
+//   position: static;
+//   min-height: 0;
+// }
+
+// .main-nav--nojs .site-list__item {
+//   display: block;
+// }
