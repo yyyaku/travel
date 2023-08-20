@@ -1,6 +1,35 @@
 .intro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: $color-default-white;
   background-color: #0084ff;
+  text-align: center;
+
+  &--сaucasus {
+    background-image: url("../img/background/caucasus-desktop.jpg");
+  }
+
+  &--kamchatka {
+    background-image: url("../img/background/kamchatka-desktop.jpg");
+  }
+
+  &--altai {
+    background-image: url("../img/background/altai-desktop.jpg");
+  }
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/back-index-mobile@2x.jpg");
+  // }
+
+  // @media (min-width: @tablet-width) {
+  //   background-image: url("../img/back-index-tablet.jpg");
+  //   padding: 78px 0 86px 0;
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/back-index-tablet@2x.jpg");
+  //   }
+  // }
 }
 
 .intro__wrapper {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1436,8 +1437,21 @@ button,
 }
 
 .intro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
   background-color: #0084ff;
+  text-align: center;
+}
+.intro--сaucasus {
+  background-image: url("../img/background/caucasus-desktop.jpg");
+}
+.intro--kamchatka {
+  background-image: url("../img/background/kamchatka-desktop.jpg");
+}
+.intro--altai {
+  background-image: url("../img/background/altai-desktop.jpg");
 }
 
 .intro__wrapper {
@@ -1686,34 +1700,17 @@ button,
   }
 }
 
-.intro-main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 769fr 431fr;
-  grid-template-columns: 769fr 431fr;
-  gap: 150px 0;
-}
-@media (max-width: 1199px) {
-  .intro-main {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
 .intro-main__text {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1199px) {
   .intro-main__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1763,9 +1760,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 0 10px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
 }
 @media (max-width: 1199px) {
   .intro-main__details {

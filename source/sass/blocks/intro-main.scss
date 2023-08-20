@@ -1,19 +1,8 @@
-.intro-main {
-  display: grid;
-  grid-template-columns: 769fr 431fr;
-  gap: 150px 0;
-
-  @include vp-1199 {
-    grid-template-columns: 1fr;
-  }
-}
-
 .intro-main__text {
-  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
 
   @include vp-1199 {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -55,7 +44,6 @@
 .intro-main__details {
   display: flex;
   gap: 0 10px;
-  grid-column: 1/2;
 
   @include vp-1199 {
     display: none;
