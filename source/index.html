@@ -23,7 +23,7 @@
   <div class="wrapper">
     <main>
       <h1 class="visually-hidden">Travel</h1>
-      <section class="intro intro--kamchatka">
+      <section class="intro">
         <div class="container">
           <div class="intro__wrapper">
             <div class="intro-header">
@@ -75,7 +75,7 @@
             </div>
             <div class="intro__swiper swiper">
               <ul class="intro__list swiper-wrapper">
-                <li class="intro__item intro__item--сaucasus swiper-slide" tabindex="0">
+                <li class="intro__item intro__item--caucasus swiper-slide" tabindex="0">
                   <div class="intro-main">
                     <div class="intro-main__text">
                       <h2>Захватывающие<br> вершины Кавказа</h2>
@@ -102,13 +102,13 @@
                       <div class="intro-video__wrapper">
                         <picture>
                           <source type="image/webp" media="(max-width: 1199px)"
-                            srcset="./img/intro/video-сaucasus-tablet.webp, ./img/intro/video-сaucasus-tablet@2x.webp 2x">
+                            srcset="./img/intro/video-caucasus-tablet.webp, ./img/intro/video-caucasus-tablet@2x.webp 2x">
                           <source type="image/webp"
-                            srcset="./img/intro/video-сaucasus.webp, ./img/intro/video-сaucasus@2x.webp 2x">
+                            srcset="./img/intro/video-caucasus.webp, ./img/intro/video-caucasus@2x.webp 2x">
 
                           <source media="(max-width: 1199px)"
-                            srcset="./img/intro/video-сaucasus-tablet.jpg, ./img/intro/video-сaucasus-tablet@2x.jpg 2x">
-                          <img src="./img/intro/video-сaucasus.jpg" srcset="./img/intro/video-сaucasus@2x.jpg 2x"
+                            srcset="./img/intro/video-caucasus-tablet.jpg, ./img/intro/video-caucasus-tablet@2x.jpg 2x">
+                          <img src="./img/intro/video-caucasus.jpg" srcset="./img/intro/video-caucasus@2x.jpg 2x"
                             width="482" height="317" alt="Человек в синей куртке стоит на горе.">
                         </picture>
                         <button type="button" aria-label="Воспроизвести видео."></button>
@@ -234,8 +234,30 @@
             <button class="tours__button tours__button--next" type="button" aria-label="Вперед."></button>
             <div class="tours__swiper swiper">
               <ul class="tours__list swiper-wrapper">
-                <li class="tours__item swiper-slide" tabindex="0">
-                  <h3>Путешествие вокруг Эльбруса</h3>
+                <li class="tour-card tour-card--elbrus swiper-slide" tabindex="0">
+                  <a href="#" class="tour-card__link">
+                    <ul class="tour-card__icons">
+                      <li class="tour-card__icon tour-card__icon--name">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>4 дня</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>3 ночи</span>
+                      </li>
+                    </ul>
+                    <h3>Путешествие вокруг Эльбруса</h3>
+                  </a>
                 </li>
               </ul>
             </div>
