@@ -2,12 +2,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: aqua;
   color: $color-default-white;
-  background-color: #0084ff;
   text-align: center;
 
   &--сaucasus {
     background-image: url("../img/background/caucasus-desktop.jpg");
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/back-index-mobile@2x.jpg");
+    // }
   }
 
   &--kamchatka {
@@ -17,19 +21,6 @@
   &--altai {
     background-image: url("../img/background/altai-desktop.jpg");
   }
-
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/back-index-mobile@2x.jpg");
-  // }
-
-  // @media (min-width: @tablet-width) {
-  //   background-image: url("../img/back-index-tablet.jpg");
-  //   padding: 78px 0 86px 0;
-
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: url("../img/back-index-tablet@2x.jpg");
-  //   }
-  // }
 }
 
 .intro__wrapper {
@@ -56,6 +47,33 @@
   & .intro-header__link {
     color: $color-default-project;
   }
+}
+
+.intro__swiper {
+  position: relative;
+}
+
+.intro__swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  @include vp-1199 {
+    justify-content: center;
+  }
+}
+
+.intro__swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+}
+
+.intro__swiper .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }
 
 .intro__list {

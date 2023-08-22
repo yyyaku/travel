@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {navButtonClick} from './modules/nav/nav';
+import {navButtonClick} from './modules/intro/nav';
+import {initVideoPlayer} from './modules/intro/init-video-player';
 import {initSliderIntro} from './modules/sliders/init-slider-intro';
 
 // ---------------------------------
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     navButtonClick();
+    initVideoPlayer();
     initSliderIntro();
   });
 });

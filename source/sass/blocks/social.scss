@@ -18,18 +18,18 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  width: 30px;
-  height: 30px;
   background-color: transparent;
-  border: 1px solid $color-icon-border;
 }
 
 .social__link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-icon-border;
 }
 
-.social__icon {
+.social__link svg {
   fill: $color-default-project;
 }
