@@ -29,22 +29,18 @@ const initSliderIntro = () => {
 
     swiper.on('slideChange', function () {
 
-      if (introSlide.classList.contains('swiper-slide-active') && introSlide.classList.contains('intro__item--caucasus')) {
-        intro.classList.remove('intro--kamchatka');
-        intro.classList.remove('intro--altai');
-        intro.classList.add('intro--caucasus');
-      }
-
       if (introSlide.classList.contains('swiper-slide-active') && introSlide.classList.contains('intro__item--kamchatka')) {
         intro.classList.remove('intro--caucasus');
         intro.classList.remove('intro--altai');
         intro.classList.add('intro--kamchatka');
-      }
-
-      if (introSlide.classList.contains('swiper-slide-active') && introSlide.classList.contains('intro__item--altai')) {
+      } else if (introSlide.classList.contains('swiper-slide-active') && introSlide.classList.contains('intro__item--altai')) {
         intro.classList.remove('intro--caucasus');
         intro.classList.remove('intro--kamchatka');
         intro.classList.add('intro--altai');
+      } else {
+        intro.classList.remove('intro--altai');
+        intro.classList.remove('intro--kamchatka');
+        intro.classList.add('intro--caucasus');
       }
     });
   }

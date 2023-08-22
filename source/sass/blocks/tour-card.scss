@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-color: $color-dark-blue;
   color: $color-default-white;
-  text-align: center;
 
   &--elbrus {
     background-image: url("../img/background/tours/elbrus.jpg");
@@ -31,12 +30,65 @@
   }
 }
 
-.tour-card__icons {
+.tour-card__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 20px;
+  max-height: 412px;
+  aspect-ratio: 380/412;
+}
+
+.tour-card__link h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.tour-card__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.tour-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &--name {
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px 0 9px 24px;
+    width: 108px;
+    background-color: $color-bright-blue;
+  }
+}
+
 .tour-card__icon svg {
   fill: $color-default-white;
+}
+
+.tour-card__icon span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour-card__info h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tour-card__info p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
 }

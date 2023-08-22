@@ -1,3 +1,26 @@
+.tours__wrapper h2 {
+  margin: 0;
+  color: $color-granite;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+}
+
+.tours__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0 4px;
+}
+
+.tours__button {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  background-color: $color-bright-blue;
+  border: none;
+}
+
 .tours__list {
   margin: 0;
   padding: 0;
