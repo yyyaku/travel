@@ -1,0 +1,42 @@
+.tour-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $color-dark-blue;
+  color: $color-default-white;
+  text-align: center;
+
+  &--elbrus {
+    background-image: url("../img/background/tours/elbrus.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/tours/elbrus@2x.jpg");
+    }
+
+    @include vp-1199 {
+      background-image: url("../img/background/tours/elbrus-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/tours/elbrus-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/background/tours/elbrus-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/tours/elbrus-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.tour-card__icons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tour-card__icon svg {
+  fill: $color-default-white;
+}
