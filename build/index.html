@@ -23,14 +23,14 @@
   <div class="wrapper">
     <main>
       <h1 class="visually-hidden">Travel</h1>
-      <section class="intro">
+      <section class="intro intro--kamchatka">
         <div class="container">
           <div class="intro__wrapper">
             <div class="intro-header">
-              <a class="intro-header__logo">
+              <a class="intro-header__logo" href="index.html">
                 <img src="./img/svg/logo.svg" width="205" height="62" alt="Логотип.">
               </a>
-              <a class="intro-header__logo-black visually-hidden">
+              <a class="intro-header__logo-black visually-hidden" href="index.html">
                 <img src="./img/svg/logo-black.svg" width="205" height="62" alt="Логотип.">
               </a>
               <nav class="main-nav main-nav--closed">
@@ -38,7 +38,7 @@
                     меню</span></button>
                 <ul class="site-list">
                   <li class="site-list__item">
-                    <a class="site-list__link">
+                    <a class="site-list__link" href="#">
                       Туры
                     </a>
                   </li>
@@ -70,30 +70,174 @@
                 </ul>
               </nav>
               <div class="intro-header__info">
-                <a class="intro-header__link" href="tel:+78007253232">8 800 725 32 32</a>
+                <a href="tel:+78007253232">8 800 725 32 32</a>
               </div>
             </div>
-            <div class="intro-main">
-              <div class="intro-main__text">
-                <h2>Захватывающие вершины Кавказа</h2>
-                <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину
-                  горы Чегет.</p>
-                <a href="#" class="btn">Смотреть тур</a>
-              </div>
-              <div class="intro-main__details">
-                <button class="intro-main__button" type="button">
-                  <svg width="11" height="11">
-                    <use href="img/sprite.svg#moon"></use>
-                  </svg>
-                  <span>6 дней/5 ночей</span>
-                </button>
-                <button class="intro-main__button" type="button">
-                  <svg width="10" height="11">
-                    <use href="img/sprite.svg#level"></use>
-                  </svg>
-                  <span>Высокая сложность</span>
-                </button>
-              </div>
+            <div class="intro__swiper swiper">
+              <ul class="intro__list swiper-wrapper">
+                <li class="intro__item intro__item--сaucasus swiper-slide" tabindex="0">
+                  <div class="intro-main">
+                    <div class="intro-main__text">
+                      <h2>Захватывающие<br> вершины Кавказа</h2>
+                      <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на
+                        вершину
+                        горы Чегет.</p>
+                      <a href="#" class="btn">Смотреть тур</a>
+                    </div>
+                    <div class="intro-main__details">
+                      <button type="button">
+                        <svg width="11" height="11">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>6 дней/5 ночей</span>
+                      </button>
+                      <button type="button">
+                        <svg width="10" height="11">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>
+                        <span>Высокая сложность</span>
+                      </button>
+                    </div>
+                    <div class="intro-video">
+                      <div class="intro-video__wrapper">
+                        <picture>
+                          <source type="image/webp" media="(max-width: 1199px)"
+                            srcset="./img/intro/video-сaucasus-tablet.webp, ./img/intro/video-сaucasus-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="./img/intro/video-сaucasus.webp, ./img/intro/video-сaucasus@2x.webp 2x">
+
+                          <source media="(max-width: 1199px)"
+                            srcset="./img/intro/video-сaucasus-tablet.jpg, ./img/intro/video-сaucasus-tablet@2x.jpg 2x">
+                          <img src="./img/intro/video-сaucasus.jpg" srcset="./img/intro/video-сaucasus@2x.jpg 2x"
+                            width="482" height="317" alt="Человек в синей куртке стоит на горе.">
+                        </picture>
+                        <button type="button" aria-label="Воспроизвести видео."></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="intro__item intro__item--kamchatka swiper-slide" tabindex="0">
+                  <div class="intro-main">
+                    <div class="intro-main__text">
+                      <h2>Невероятная<br> природа Камчатки</h2>
+                      <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
+                        нетронутых уголков дикой природы в мире.</p>
+                      <a href="#" class="btn">Смотреть тур</a>
+                    </div>
+                    <div class="intro-main__details">
+                      <button type="button">
+                        <svg width="11" height="11">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>9 дней/10 ночей</span>
+                      </button>
+                      <button type="button">
+                        <svg width="10" height="11">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>
+                        <span>Средняя сложность</span>
+                      </button>
+                    </div>
+                    <div class="intro-photo">
+                      <div class="intro-photo__wrapper">
+                        <div class="intro-photo__primary">
+                          <picture>
+                            <source type="image/webp" media="(max-width: 1199px)"
+                              srcset="./img/intro/kamchatka-primary-tablet.webp, ./img/intro/kamchatka-primary-tablet@2x.webp 2x">
+                            <source type="image/webp"
+                              srcset="./img/intro/kamchatka-primary.webp, ./img/intro/kamchatka-primary@2x.webp 2x">
+
+                            <source media="(max-width: 1199px)"
+                              srcset="./img/intro/kamchatka-primary-tablet.png, ./img/intro/kamchatka-primary-tablet@2x.png 2x">
+                            <img src="./img/intro/kamchatka-primary.png"
+                              srcset="./img/intro/kamchatka-primary@2x.png 2x" width="277" height="366"
+                              alt="Человек в желтой куртке поднимается в гору.">
+                          </picture>
+                        </div>
+                        <div class="intro-photo__secondary">
+                          <picture>
+                            <source type="image/webp" media="(max-width: 1199px)"
+                              srcset="./img/intro/kamchatka-secondary-tablet.webp, ./img/intro/kamchatka-secondary-tablet@2x.webp 2x">
+                            <source type="image/webp"
+                              srcset="./img/intro/kamchatka-secondary.webp, ./img/intro/kamchatka-secondary@2x.webp 2x">
+
+                            <source media="(max-width: 1199px)"
+                              srcset="./img/intro/kamchatka-secondary-tablet.png, ./img/intro/kamchatka-secondary-tablet@2x.png 2x">
+                            <img src="./img/intro/kamchatka-secondary.png"
+                              srcset="./img/intro/kamchatka-secondary@2x.png 2x" width="308" height="407"
+                              alt="Озеро в окружении высоких гор.">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="intro__item intro__item--altai swiper-slide" tabindex="0">
+                  <div class="intro-main">
+                    <div class="intro-main__text">
+                      <h2>Магические пейзажи Алтайского Края</h2>
+                      <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
+                        дух ландшафтов Алтайских гор. </p>
+                      <a href="#" class="btn">Смотреть тур</a>
+                    </div>
+                    <div class="intro-main__details">
+                      <button type="button">
+                        <svg width="11" height="11">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>8 дней/7 ночей</span>
+                      </button>
+                      <button type="button">
+                        <svg width="10" height="11">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>
+                        <span>Легкая сложность</span>
+                      </button>
+                    </div>
+                    <div class="intro-audio">
+                      <div class="intro-audio__wrapper">
+                        <div class="intro-audio__text">
+                          <h3>Алтай</h3>
+                          <p>Lifetour</p>
+                          <ul class="intro-audio__like-btns">
+                            <li class="intro-audio__like-btn">
+                              <a class="intro-audio__like-link" href="#">
+                                <svg width="17" height="17">
+                                  <use href="img/sprite.svg#like"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="intro-audio__like-btn">
+                              <a class="intro-audio__like-link" href="#">
+                                <svg width="17" height="17">
+                                  <use href="img/sprite.svg#share"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tours">
+        <div class="container">
+          <div class="tours__wrapper">
+            <h2>Ближайшие туры</h2>
+            <button class="tours__button tours__button--prev" type="button" aria-label="Назад."></button>
+            <button class="tours__button tours__button--next" type="button" aria-label="Вперед."></button>
+            <div class="tours__swiper swiper">
+              <ul class="tours__list swiper-wrapper">
+                <li class="tours__item swiper-slide" tabindex="0">
+                  <h3>Путешествие вокруг Эльбруса</h3>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -103,13 +247,13 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer-header">
-            <a class="footer-header__logo">
+            <a class="footer-header__logo" href="index.html">
               <img src="./img/svg/logo-black.svg" width="205" height="62" alt="Логотип.">
             </a>
             <nav class="footer-header__nav">
               <ul class="footer-header__list">
                 <li class="footer-header__item">
-                  <a class="footer-header__link">
+                  <a class="footer-header__link" href="#">
                     Туры
                   </a>
                 </li>
@@ -146,24 +290,24 @@
           </div>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg class="social__icon" width="16" height="9">
+              <a class="social__link" href="#">
+                <svg width="16" height="9">
                   <use href="img/sprite.svg#vk"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <svg class="social__icon" width="9" height="16">
+              <a class="social__link" href="#">
+                <svg width="9" height="16">
                   <use href="img/sprite.svg#odnoklassniki"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Одноклассниках</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__icon" width="14" height="15">
+              <a class="social__link" href="#">
+                <svg width="14" height="15">
                   <use href="img/sprite.svg#reddit"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Редит</span>

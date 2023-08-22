@@ -1,0 +1,48 @@
+.intro-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include vp-1199 {
+    position: static;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.intro-photo__wrapper {
+  position: relative;
+  width: 410px;
+  height: 459px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    width: 442px;
+    height: 365px;
+  }
+}
+
+.intro-photo__primary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @include vp-1199 {
+    width: 236px;
+    height: 312px;
+  }
+}
+
+.intro-photo__secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 351px;
+  }
+}

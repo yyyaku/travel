@@ -1,19 +1,13 @@
 .intro-main {
-  display: grid;
-  grid-template-columns: 769fr 431fr;
-  gap: 150px 0;
-
-  @include vp-1199 {
-    grid-template-columns: 1fr;
-  }
+  position: relative;
 }
 
 .intro-main__text {
-  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 
   @include vp-1199 {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -39,6 +33,7 @@
 
 .intro-main__text p {
   margin: 0 0 35px;
+  max-width: 464px;
   font-size: 17px;
 
   @include vp-1199 {
@@ -55,23 +50,23 @@
 .intro-main__details {
   display: flex;
   gap: 0 10px;
-  grid-column: 1/2;
 
   @include vp-1199 {
     display: none;
   }
 }
 
-.intro-main__button {
+.intro-main__details button {
   display: flex;
   align-items: center;
   gap: 0 8px;
   padding: 14px 20px;
   color: $color-default-white;
   background-color: transparent;
-  border: 1px solid $color-button-border;
+  border: 1px solid $color-white-opacity50;
+  cursor: pointer;
 }
 
-.intro-main__button svg {
+.intro-main__details svg {
   fill: $color-default-white;
 }
