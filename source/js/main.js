@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {navButtonClick} from './modules/intro/nav';
 import {initVideoPlayer} from './modules/intro/init-video-player';
 import {initSliderIntro} from './modules/sliders/init-slider-intro';
+import {initSliderTours} from './modules/sliders/init-slider-tours';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     navButtonClick();
     initVideoPlayer();
     initSliderIntro();
+    initSliderTours();
   });
 });
 

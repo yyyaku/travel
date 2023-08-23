@@ -1,0 +1,82 @@
+.tours__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px;
+}
+
+.tours__header h2 {
+  position: relative;
+  margin: 0;
+  color: $color-granite;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  &::before {
+    position: absolute;
+    content: "Ближайшие туры";
+    min-width: 1200px;
+    color: $color-granite-opacity3;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+
+    &::before {
+      min-width: 678px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    &::before {
+      min-width: 290px;
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.tours__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tours__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tours__link {
+  color: $color-default-project;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+
+.tours__link span {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-top: 1px solid $color-default-project;
+  border-right: 1px solid $color-default-project;
+  transform: rotate(45deg);
+}

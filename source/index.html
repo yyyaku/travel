@@ -23,7 +23,7 @@
   <div class="wrapper">
     <main>
       <h1 class="visually-hidden">Travel</h1>
-      <section class="intro intro--kamchatka">
+      <section class="intro intro--caucasus">
         <div class="container">
           <div class="intro__wrapper">
             <div class="intro-header">
@@ -35,7 +35,7 @@
               </a>
               <nav class="main-nav main-nav--closed">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
-                    меню</span></button>
+                    меню.</span></button>
                 <ul class="site-list">
                   <li class="site-list__item">
                     <a class="site-list__link" href="#">
@@ -75,7 +75,7 @@
             </div>
             <div class="intro__swiper swiper">
               <ul class="intro__list swiper-wrapper">
-                <li class="intro__item intro__item--сaucasus swiper-slide" tabindex="0">
+                <li class="intro__item intro__item--caucasus swiper-slide" tabindex="0">
                   <div class="intro-main">
                     <div class="intro-main__text">
                       <h2>Захватывающие<br> вершины Кавказа</h2>
@@ -102,13 +102,13 @@
                       <div class="intro-video__wrapper">
                         <picture>
                           <source type="image/webp" media="(max-width: 1199px)"
-                            srcset="./img/intro/video-сaucasus-tablet.webp, ./img/intro/video-сaucasus-tablet@2x.webp 2x">
+                            srcset="./img/intro/video-caucasus-tablet.webp, ./img/intro/video-caucasus-tablet@2x.webp 2x">
                           <source type="image/webp"
-                            srcset="./img/intro/video-сaucasus.webp, ./img/intro/video-сaucasus@2x.webp 2x">
+                            srcset="./img/intro/video-caucasus.webp, ./img/intro/video-caucasus@2x.webp 2x">
 
                           <source media="(max-width: 1199px)"
-                            srcset="./img/intro/video-сaucasus-tablet.jpg, ./img/intro/video-сaucasus-tablet@2x.jpg 2x">
-                          <img src="./img/intro/video-сaucasus.jpg" srcset="./img/intro/video-сaucasus@2x.jpg 2x"
+                            srcset="./img/intro/video-caucasus-tablet.jpg, ./img/intro/video-caucasus-tablet@2x.jpg 2x">
+                          <img src="./img/intro/video-caucasus.jpg" srcset="./img/intro/video-caucasus@2x.jpg 2x"
                             width="482" height="317" alt="Человек в синей куртке стоит на горе.">
                         </picture>
                         <button type="button" aria-label="Воспроизвести видео."></button>
@@ -229,15 +229,191 @@
       <section class="tours">
         <div class="container">
           <div class="tours__wrapper">
-            <h2>Ближайшие туры</h2>
-            <button class="tours__button tours__button--prev" type="button" aria-label="Назад."></button>
-            <button class="tours__button tours__button--next" type="button" aria-label="Вперед."></button>
+            <div class="tours__header">
+              <h2>Ближайшие туры</h2>
+              <div class="swiper__buttons">
+                <button class="swiper__button tours__button--prev" type="button" aria-label="Назад.">
+                  <span class="swiper__arrow swiper__arrow--prev"></span>
+                </button>
+                <button class="swiper__button tours__button--next" type="button" aria-label="Вперед.">
+                  <span class="swiper__arrow swiper__arrow--next"></span>
+                </button>
+              </div>
+            </div>
             <div class="tours__swiper swiper">
               <ul class="tours__list swiper-wrapper">
-                <li class="tours__item swiper-slide" tabindex="0">
-                  <h3>Путешествие вокруг Эльбруса</h3>
+                <li class="tour-card tour-card--elbrus swiper-slide" tabindex="0">
+                  <a href="#" class="tour-card__link">
+                    <ul class="tour-card__row">
+                      <li class="tour-card__icon tour-card__icon--name">
+                        <svg width="9" height="12">
+                          <use href="img/sprite.svg#pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="20" height="20">
+                          <use href="img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>4 дня</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="20" height="20">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>3 ночи</span>
+                      </li>
+                    </ul>
+                    <h3>Путешествие вокруг Эльбруса</h3>
+                    <ul class="tour-card__row">
+                      <li class="tour-card__info">
+                        <h4>Сложность:</h4>
+                        <div class="tour-card__stars">
+                          <span class="visually-hidden">3 звезды рейтинга.</span>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tour-card__info">
+                        <h4>Даты набора:</h4>
+                        <p>12.06-19.06</p>
+                      </li>
+                      <li class="tour-card__info">
+                        <h4>Группа:</h4>
+                        <p>до 15 чел.</p>
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+                <li class="tour-card tour-card--beluha swiper-slide" tabindex="0">
+                  <a href="#" class="tour-card__link">
+                    <ul class="tour-card__row">
+                      <li class="tour-card__icon tour-card__icon--name">
+                        <svg width="9" height="12">
+                          <use href="img/sprite.svg#pin"></use>
+                        </svg>
+                        <span>Алтай</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="20" height="20">
+                          <use href="img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>14 дней</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="20" height="20">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>13 ночей</span>
+                      </li>
+                    </ul>
+                    <h3>Путь к подножию Белухи</h3>
+                    <ul class="tour-card__row">
+                      <li class="tour-card__info">
+                        <h4>Сложность:</h4>
+                        <div class="tour-card__stars">
+                          <span class="visually-hidden">3 звезды рейтинга.</span>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tour-card__info">
+                        <h4>Даты набора:</h4>
+                        <p>14.06-23.06</p>
+                      </li>
+                      <li class="tour-card__info">
+                        <h4>Группа:</h4>
+                        <p>до 25 чел.</p>
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+                <li class="tour-card tour-card--fisht swiper-slide" tabindex="0">
+                  <a href="#" class="tour-card__link">
+                    <ul class="tour-card__row">
+                      <li class="tour-card__icon tour-card__icon--name">
+                        <svg width="9" height="12">
+                          <use href="img/sprite.svg#pin"></use>
+                        </svg>
+                        <span>Адыгея</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="20" height="20">
+                          <use href="img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>7 дней</span>
+                      </li>
+                      <li class="tour-card__icon">
+                        <svg width="20" height="20">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>6 ночей</span>
+                      </li>
+                    </ul>
+                    <h3>Через Фишт к Черному морю</h3>
+                    <ul class="tour-card__row">
+                      <li class="tour-card__info">
+                        <h4>Сложность:</h4>
+                        <div class="tour-card__stars">
+                          <span class="visually-hidden">3 звезды рейтинга.</span>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star-active"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tour-card__info">
+                        <h4>Даты набора:</h4>
+                        <p>15.07-19.07</p>
+                      </li>
+                      <li class="tour-card__info">
+                        <h4>Группа:</h4>
+                        <p>до 22 чел.</p>
+                      </li>
+                    </ul>
+                  </a>
                 </li>
               </ul>
+            </div>
+            <div class="tours__footer">
+              <a href="#" class="tours__link">Показать все туры<span></span></a>
             </div>
           </div>
         </div>
@@ -294,7 +470,7 @@
                 <svg width="16" height="9">
                   <use href="img/sprite.svg#vk"></use>
                 </svg>
-                <span class="visually-hidden">Мы в Вконтакте</span>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
@@ -302,7 +478,7 @@
                 <svg width="9" height="16">
                   <use href="img/sprite.svg#odnoklassniki"></use>
                 </svg>
-                <span class="visually-hidden">Мы в Одноклассниках</span>
+                <span class="visually-hidden">Мы в Одноклассниках.</span>
               </a>
             </li>
             <li class="social__item">
@@ -310,14 +486,13 @@
                 <svg width="14" height="15">
                   <use href="img/sprite.svg#reddit"></use>
                 </svg>
-                <span class="visually-hidden">Мы в Редит</span>
+                <span class="visually-hidden">Мы в Редит.</span>
               </a>
             </li>
           </ul>
-          <a class="footer__copyright" href="#">
-            <span class="footer__text">Политика конфиденциальности</span>
-          </a>
+          <a class="footer__copyright" href="#">Политика конфиденциальности</a>
         </div>
+      </div>
     </footer>
   </div>
 

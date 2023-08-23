@@ -2,24 +2,80 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: aqua;
+  background-color: $color-brown;
   color: $color-default-white;
   text-align: center;
 
-  &--сaucasus {
-    background-image: url("../img/background/caucasus-desktop.jpg");
+  &--caucasus {
+    background-image: url("../img/background/intro/caucasus.jpg");
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/back-index-mobile@2x.jpg");
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/intro/caucasus@2x.jpg");
+    }
+
+    @include vp-1199 {
+      background-image: url("../img/background/intro/caucasus-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/intro/caucasus-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/background/intro/caucasus-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/intro/caucasus-mobile@2x.jpg");
+      }
+    }
   }
 
   &--kamchatka {
-    background-image: url("../img/background/kamchatka-desktop.jpg");
+    background-image: url("../img/background/intro/kamchatka.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/intro/kamchatka@2x.jpg");
+    }
+
+    @include vp-1199 {
+      background-image: url("../img/background/intro/kamchatka-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/intro/kamchatka-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/background/intro/kamchatka-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/intro/kamchatka-mobile@2x.jpg");
+      }
+    }
   }
 
   &--altai {
-    background-image: url("../img/background/altai-desktop.jpg");
+    background-image: url("../img/background/intro/altai.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/intro/altai@2x.jpg");
+    }
+
+    @include vp-1199 {
+      background-image: url("../img/background/intro/altai-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/intro/altai-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/background/intro/altai-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/intro/altai-mobile@2x.jpg");
+      }
+    }
   }
 }
 

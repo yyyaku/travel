@@ -1,0 +1,44 @@
+.swiper__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 4px;
+}
+
+.swiper__button {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  background-color: $color-bright-blue;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+}
+
+.swiper__arrow {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+
+  &--prev {
+    border-top: 1px solid $color-default-white;
+    border-right: 1px solid $color-default-white;
+    transform: rotate(-135deg);
+  }
+
+  &--next {
+    border-top: 1px solid $color-default-white;
+    border-right: 1px solid $color-default-white;
+    transform: rotate(45deg);
+  }
+}

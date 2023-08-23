@@ -16,6 +16,7 @@
   position: relative;
   width: 482px;
   height: 317px;
+  background-color: $color-dark-blue;
 
   @include vp-1199 {
     margin: 0 auto;
