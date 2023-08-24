@@ -231,12 +231,12 @@
           <div class="tours__wrapper">
             <div class="tours__header">
               <h2>Ближайшие туры</h2>
-              <div class="swiper__buttons">
-                <button class="swiper__button tours__button--prev" type="button" aria-label="Назад.">
-                  <span class="swiper__arrow swiper__arrow--prev"></span>
+              <div class="swiper-buttons">
+                <button class="swiper-buttons__button tours__button--prev" type="button" aria-label="Назад.">
+                  <span class="swiper-buttons__arrow swiper-buttons__arrow--prev"></span>
                 </button>
-                <button class="swiper__button tours__button--next" type="button" aria-label="Вперед.">
-                  <span class="swiper__arrow swiper__arrow--next"></span>
+                <button class="swiper-buttons__button tours__button--next" type="button" aria-label="Вперед.">
+                  <span class="swiper-buttons__arrow swiper-buttons__arrow--next"></span>
                 </button>
               </div>
             </div>
@@ -427,12 +427,12 @@
             <div class="instructors">
               <div class="instructors__header">
                 <h3>Наши инструкторы</h3>
-                <div class="swiper__buttons">
-                  <button class="swiper__button instructors__button--prev" type="button" aria-label="Назад.">
-                    <span class="swiper__arrow swiper__arrow--prev"></span>
+                <div class="swiper-buttons">
+                  <button class="swiper-buttons__button instructors__button--prev" type="button" aria-label="Назад.">
+                    <span class="swiper-buttons__arrow swiper-buttons__arrow--prev"></span>
                   </button>
-                  <button class="swiper__button instructors__button--next" type="button" aria-label="Вперед.">
-                    <span class="swiper__arrow swiper__arrow--next"></span>
+                  <button class="swiper-buttons__button instructors__button--next" type="button" aria-label="Вперед.">
+                    <span class="swiper-buttons__arrow swiper-buttons__arrow--next"></span>
                   </button>
                 </div>
               </div>
@@ -591,16 +591,43 @@
       <section class="about">
         <div class="about__wrapper">
           <div class="about__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/company/about-mobile.webp, ./img/company/about-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/company/about-tablet.webp, ./img/company/about-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/company/about.webp, ./img/company/about@2x.webp 2x">
 
+              <source media="(max-width: 767px)"
+                srcset="./img/company/about-mobile.jpg, ./img/company/about-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/company/about-tablet.jpg, ./img/company/about-tablet@2x.jpg 2x">
+              <img src="./img/company/about.jpg" srcset="./img/company/about@2x.jpg 2x" width="808" height="474"
+                alt="Компания из пяти людей спускаются по горе к озеру.">
+            </picture>
           </div>
           <div class="about__content">
             <h2>О нас</h2>
             <ul class="about__list">
               <li class="about__item">
-
+                <h3>История компании</h3>
+                <p>В далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько
+                  понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
+                  людям удивительные места нашей страны.</p>
+              </li>
+              <li class="about__item">
+                <h3>Наша цель </h3>
+                <p>Подарить вам незабываемые впечатления от похода в горы. Мы берем на себя все организационные вопросы.
+                  При организации мы обязательно учтем все ваши пожелания. Вам останется только наслаждаться
+                  незабываемым приключением в приятной компании.</p>
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+
         </div>
       </section>
     </main>
