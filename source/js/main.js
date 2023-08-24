@@ -6,6 +6,7 @@ import {initVideoPlayer} from './modules/intro/init-video-player';
 import {initSliderIntro} from './modules/sliders/init-slider-intro';
 import {initSliderTours} from './modules/sliders/init-slider-tours';
 import {initSliderInstructors} from './modules/sliders/init-slider-instructors';
+import {initSliderReviews} from './modules/sliders/init-slider-reviews';
 
 // ---------------------------------
 
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderIntro();
     initSliderTours();
     initSliderInstructors();
+    initSliderReviews();
   });
 });
 
