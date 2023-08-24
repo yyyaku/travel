@@ -1,11 +1,11 @@
-.swiper__buttons {
+.swiper-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0 4px;
 }
 
-.swiper__button {
+.swiper-buttons__button {
   position: relative;
   width: 37px;
   height: 35px;
@@ -24,7 +24,7 @@
   }
 }
 
-.swiper__arrow {
+.swiper-buttons__arrow {
   display: inline-flex;
   width: 10px;
   height: 10px;
