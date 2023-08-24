@@ -17,8 +17,9 @@
 
 // Blocks
 // ---------------------------------
-
 @import "blocks/btn";
+@import "blocks/swiper-buttons";
+
 @import "blocks/intro";
 @import "blocks/intro-header";
 @import "blocks/main-nav";
@@ -28,13 +29,14 @@
 @import "blocks/intro-photo";
 @import "blocks/intro-audio";
 @import "blocks/tours";
-@import "blocks/swiper-buttons";
 @import "blocks/tour-card";
 @import "blocks/education";
 @import "blocks/instructors";
 @import "blocks/instructor-card";
 @import "blocks/education-process";
 @import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/reviews-card";
 @import "blocks/footer";
 @import "blocks/footer-header";
 @import "blocks/social";

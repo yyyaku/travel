@@ -1436,6 +1436,62 @@ button,
   cursor: pointer;
 }
 
+.swiper-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 4px;
+}
+
+.swiper-buttons__button {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: none;
+}
+.swiper-buttons__button::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 13px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.swiper-buttons__arrow {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.swiper-buttons__arrow--prev {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.swiper-buttons__arrow--next {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .intro {
   background-size: cover;
   background-position: center;
@@ -2191,62 +2247,6 @@ button,
           transform: rotate(45deg);
 }
 
-.swiper-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0 4px;
-}
-
-.swiper-buttons__button {
-  position: relative;
-  width: 37px;
-  height: 35px;
-  background-color: #0266c1;
-  border: none;
-}
-.swiper-buttons__button::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 13px;
-  height: 1px;
-  background-color: #ffffff;
-}
-
-.swiper-buttons__arrow {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-}
-.swiper-buttons__arrow--prev {
-  border-top: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-.swiper-buttons__arrow--next {
-  border-top: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .tour-card {
   background-size: cover;
   background-position: center;
@@ -2874,6 +2874,184 @@ button,
   .about__item p {
     line-height: 20px;
   }
+}
+
+.reviews__wrapper {
+  padding: 0 0 0 120px;
+}
+@media (max-width: 1199px) {
+  .reviews__wrapper {
+    padding: 0 0 0 45px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__wrapper {
+    padding: 0 15px;
+  }
+}
+
+.reviews__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 58px;
+  padding: 0 120px 0 0;
+  width: 100%;
+  max-width: 1440px;
+}
+@media (max-width: 1199px) {
+  .reviews__header {
+    padding: 0 45px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__header {
+    padding: 0;
+  }
+}
+
+.reviews__header h2 {
+  position: relative;
+  margin: 0;
+  color: #2d383f;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+}
+@media (max-width: 1199px) {
+  .reviews__header h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__header h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+.reviews__header h2::before {
+  position: absolute;
+  content: "Отзывы";
+  min-width: 1200px;
+  color: rgba(45, 56, 63, 0.03);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+}
+@media (max-width: 1199px) {
+  .reviews__header h2::before {
+    min-width: 678px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__header h2::before {
+    min-width: 290px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+  padding: 20px 40px 20px 20px;
+}
+@media (max-width: 1199px) {
+  .reviews-card {
+    padding: 20px 30px 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.reviews-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+  max-width: 442px;
+}
+@media (max-width: 1199px) {
+  .reviews-card__info {
+    padding: 4.5px 0;
+    max-width: 294px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-card__info {
+    gap: 15px 0;
+    max-width: 100%;
+  }
+}
+
+.reviews-card__text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (max-width: 1199px) {
+  .reviews-card__text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.reviews-card__name h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+@media (max-width: 1199px) {
+  .reviews-card__name h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-card__name h3 {
+    line-height: 12px;
+  }
+}
+
+.reviews-card__name span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
 }
 
 @media (max-width: 767px) {
