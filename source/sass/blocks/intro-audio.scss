@@ -17,8 +17,8 @@
   padding: 40px;
   width: 340px;
   height: 220px;
-  color: $color-intro-audio;
-  background-color: $color-intro-audio-background;
+  color: $color-midnight-blue;
+  background-color: $color-periwinkle-crayola-opacity90;
 
   @include vp-1199 {
     margin: 0 auto;
@@ -53,5 +53,5 @@
 }
 
 .intro-audio__like-link {
-  fill: $color-intro-audio;
+  fill: $color-midnight-blue;
 }
