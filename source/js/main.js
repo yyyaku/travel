@@ -5,6 +5,7 @@ import {navButtonClick} from './modules/intro/nav';
 import {initVideoPlayer} from './modules/intro/init-video-player';
 import {initSliderIntro} from './modules/sliders/init-slider-intro';
 import {initSliderTours} from './modules/sliders/init-slider-tours';
+import {initSliderInstructors} from './modules/sliders/init-slider-instructors';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideoPlayer();
     initSliderIntro();
     initSliderTours();
+    initSliderInstructors();
   });
 });
 
