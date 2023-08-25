@@ -1,0 +1,31 @@
+.gallery-card {
+  display: flex;
+  gap: 0 5px;
+
+  @include vp-767 {
+    gap: 0 3px;
+  }
+}
+
+.gallery-card__image--secondory {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+
+  @include vp-767 {
+    gap: 3px 0;
+  }
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-card--secondory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 294px;
+}
