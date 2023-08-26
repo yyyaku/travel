@@ -1,0 +1,92 @@
+.form {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $color-brown;
+  color: $color-default-white;
+  text-align: center;
+  background-image: url("../img/background/form/forest.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/form/forest@2x.jpg");
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/background/form/forest-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/form/forest-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/background/form/forest-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/form/forest-mobile@2x.jpg");
+    }
+  }
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  padding: 307px 231px;
+  width: 100%;
+  max-width: 1440px;
+
+  @include vp-1199 {
+    padding: 192px 236px 183px;
+  }
+
+  @include vp-767 {
+    padding: 181px 15px 175px;
+  }
+}
+
+.form__text h2 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.form__text p {
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.form__wrapper form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0 30px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px 0;
+  }
+}
+
+.form__control button {
+  padding: 24px 0;
+  width: 238px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
