@@ -55,20 +55,17 @@
   &::before {
     position: absolute;
     content: "О нас";
-    min-width: 600px;
     color: $color-granite-opacity3;
     font-size: 55px;
     font-weight: 800;
     line-height: 55px;
 
     @include vp-1199 {
-      min-width: 339px;
       font-size: 40px;
       line-height: 40px;
     }
 
     @include vp-767 {
-      min-width: 145px;
       font-size: 26px;
       line-height: 26px;
     }
