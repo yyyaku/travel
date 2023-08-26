@@ -1,0 +1,30 @@
+.input-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.input-text__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  list-style-type: none;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 7px 0;
+  }
+}
+
+.input-text__item input {
+  padding: 24px 30px;
+  width: 100%;
+  max-height: 64px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
