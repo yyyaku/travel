@@ -9,6 +9,7 @@ import {initSliderInstructors} from './modules/sliders/init-slider-instructors';
 import {initSliderReviews} from './modules/sliders/init-slider-reviews';
 import {initSliderAdvantages} from './modules/sliders/init-slider-advantages';
 import {initSliderGallery} from './modules/sliders/init-slider-gallery';
+import {map} from './modules/map/map';
 
 // ---------------------------------
 
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderReviews();
     initSliderAdvantages();
     initSliderGallery();
+    map();
   });
 });
 
