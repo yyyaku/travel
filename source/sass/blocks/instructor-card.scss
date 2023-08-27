@@ -32,18 +32,11 @@
 }
 
 .instructor-card__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   justify-self: end;
   align-self: center;
   width: 24px;
   height: 24px;
   border: 1px solid $color-bright-blue-opacity10;
-}
-
-.instructor-card__link svg {
-  fill: $color-default-project;
 }
 
 .instructor-card__info p {

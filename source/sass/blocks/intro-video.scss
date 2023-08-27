@@ -58,7 +58,50 @@
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
-    border-left: 16px solid #ffffff;
+    border-left: 16px solid $color-default-white;
     border-bottom: 8px solid transparent;
+  }
+
+  @include hover-focus {
+    background-color: transparent;
+    border: 1px solid $color-midnight-blue;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-left: 16px solid $color-default-black;
+      border-bottom: 8px solid transparent;
+    }
+
+    &::before {
+      border-top: 7px solid transparent;
+      border-left: 14px solid $color-default-white;
+      border-bottom: 7px solid transparent;
+      z-index: 3;
+    }
+  }
+
+  @include focus;
+
+  @include active {
+    background-color: $color-midnight-blue;
+    border: 1px solid $color-midnight-blue;
+  }
+
+  @include disabled {
+    background-color: transparent;
+    border: 1px solid $color-bright-blue-opacity10;
+
+    &::before {
+      border-top: 8px solid transparent;
+      border-left: 16px solid $color-bright-blue-opacity10;
+      border-bottom: 8px solid transparent;
+    }
   }
 }

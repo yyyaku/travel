@@ -1,0 +1,31 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-granite-opacity30;
+
+  & svg {
+    fill: $color-default-project;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-default-project;
+  }
+
+  @include focus;
+
+  @include active {
+    background-color: $color-bright-blue;
+    border: 1px solid transparent;
+
+    & svg {
+      fill: $color-default-white;
+    }
+  }
+
+  @include disabled {
+    & svg {
+      fill: $color-granite-opacity30;
+    }
+  }
+}

@@ -22,14 +22,6 @@
 }
 
 .social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid $color-granite-opacity30;
-}
-
-.social__link svg {
-  fill: $color-default-project;
 }

@@ -1,0 +1,33 @@
+.logo {
+  cursor: pointer;
+
+  @include hover {
+    & img {
+      border-bottom: 1px solid $color-default-white;
+    }
+  }
+
+  @include focus-visible {
+    & img {
+      border: 1px solid $color-default-white;
+    }
+  }
+
+  @include focus;
+}
+
+.logo--dark {
+  @include hover {
+    & img {
+      border-bottom: 1px solid $color-default-project;
+    }
+  }
+
+  @include focus-visible {
+    & img {
+      border: 1px solid $color-default-project;
+    }
+  }
+
+  @include focus;
+}

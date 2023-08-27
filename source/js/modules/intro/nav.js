@@ -1,4 +1,4 @@
-const intro = document.querySelector('.intro');
+const introHeader = document.querySelector('.intro-header');
 const introLogo = document.querySelector('.intro-header__logo');
 const introLogoBlack = document.querySelector('.intro-header__logo-black');
 const navMain = document.querySelector('.main-nav');
@@ -11,15 +11,13 @@ const navButtonClick = () => {
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
-      intro.classList.remove('intro');
-      intro.classList.add('intro--opened');
+      introHeader.classList.add('intro-header--opened');
       introLogo.classList.add('visually-hidden');
       introLogoBlack.classList.remove('visually-hidden');
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
-      intro.classList.remove('intro--opened');
-      intro.classList.add('intro');
+      introHeader.classList.remove('intro-header--opened');
       introLogoBlack.classList.add('visually-hidden');
       introLogo.classList.remove('visually-hidden');
     }

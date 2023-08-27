@@ -54,15 +54,29 @@
 }
 
 .footer-header__link {
+  padding: 3px 5px;
   color: $color-default-project;
-  background-color: transparent;
-  border: 0;
+  border: 1px solid transparent;
   font-size: 16px;
   line-height: 16px;
 
   @include vp-1199 {
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-project;
+  }
+
+  @include focus-visible {
+    border: 1px solid $color-default-project;
+  }
+
+  @include focus;
+
+  @include disabled {
+    color: $color-black-opacity50;
   }
 }
 
@@ -86,5 +100,19 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @include hover-focus {
+    color: $color-midnight-blue;
+  }
+
+  @include focus;
+
+  @include active {
+    color: $color-bright-blue;
+  }
+
+  @include disabled {
+    color: $color-white-opacity10;
   }
 }

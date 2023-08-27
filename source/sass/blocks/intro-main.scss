@@ -50,23 +50,23 @@
 .intro-main__details {
   display: flex;
   gap: 0 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
   @include vp-1199 {
     display: none;
   }
 }
 
-.intro-main__details button {
+.intro-main__details-item {
   display: flex;
   align-items: center;
   gap: 0 8px;
   padding: 14px 20px;
-  color: $color-default-white;
-  background-color: transparent;
   border: 1px solid $color-white-opacity50;
-  cursor: pointer;
 }
 
-.intro-main__details svg {
+.intro-main__details-item svg {
   fill: $color-default-white;
 }
