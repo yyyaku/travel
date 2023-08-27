@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 585px;
   gap: 0 132px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts__content h3 {
@@ -107,4 +111,42 @@
 
 .contacts__item a {
   color: $color-default-project;
+}
+
+.contacts__map {
+  margin: 98px 0 0 0;
+  width: 100%;
+  min-height: 324px;
+  height: auto;
+  position: relative;
+  background-image: url("../img/background/map/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  box-sizing: border-box;
+
+  @supports (background-image: url("../img/background/map/map.webp")) {
+    background-image: url("../img/background/map/map.webp");
+  }
+
+
+  @include vp-1199 {
+    margin: 0;
+    min-height: 340px;
+    background-image: url("../img/background/map/map-tablet.png");
+
+    @supports (background-image: url("../img/background/map/map-tablet.webp")) {
+      background-image: url("../img/background/map/map-tablet.webp");
+    }
+  }
+
+  @include vp-767 {
+    min-height: 320px;
+    background-image: url("../img/background/map/map-mobile.png");
+
+    @supports (background-image: url("../img/background/map/map-mobile.webp")) {
+      background-image: url("../img/background/map/map-mobile.webp");
+    }
+  }
 }
