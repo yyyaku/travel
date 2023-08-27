@@ -2,18 +2,6 @@
   position: absolute;
   top: 0;
   right: 0;
-
-  @include vp-1199 {
-    position: static;
-  }
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.intro-audio__wrapper {
-  position: relative;
   padding: 40px;
   width: 340px;
   height: 220px;
@@ -21,37 +9,109 @@
   background-color: $color-periwinkle-crayola-opacity90;
 
   @include vp-1199 {
+    position: static;
     margin: 0 auto;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
-.intro-audio__text {
-  position: relative;
-  text-align: start;
+// Название треки и поделиться
+
+.intro-audio__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.intro-audio__text h3 {
+.intro-audio__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.intro-audio__info h3 {
   margin: 0;
   font-size: 22px;
   line-height: 22px;
 }
 
-.intro-audio__text p {
+.intro-audio__info p {
   margin: 0;
   font-size: 14px;
 }
 
-.intro-audio__like-btns {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.intro-audio__icons {
   display: flex;
-  gap: 0 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.intro-audio__like-link {
+.intro-audio__icon svg {
+  fill: $color-midnight-blue;
+}
+
+// Линия проигрывателя и время
+
+.intro-audio__scale {
+  position: relative;
+  height: 2px;
+  background-color: $color-midnight-blue-opacity40;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.intro-audio__bar {
+  position: absolute;
+  height: 2px;
+  background-color: $color-midnight-blue;
+  border-radius: 4px;
+}
+
+.intro-audio__toggle {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 11px;
+  cursor: pointer;
+  background-color: $color-midnight-blue;
+  border-radius: 50%;
+  border: none;
+}
+
+.intro-audio__timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Кнопки управления прогирывателя
+
+.intro-audio__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-audio__controls-play {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.intro-audio__controls-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.intro-audio__controls-button svg {
   fill: $color-midnight-blue;
 }
