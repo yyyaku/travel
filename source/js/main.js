@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {navButtonClick} from './modules/intro/nav';
 import {initVideoPlayer} from './modules/intro/init-video-player';
+import {initAudioPlayer} from './modules/intro/init-audio-player';
 import {initSliderIntro} from './modules/sliders/init-slider-intro';
 import {initSliderTours} from './modules/sliders/init-slider-tours';
 import {initSliderInstructors} from './modules/sliders/init-slider-instructors';
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     navButtonClick();
     initVideoPlayer();
+    initAudioPlayer();
     initSliderIntro();
     initSliderTours();
     initSliderInstructors();

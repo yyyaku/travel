@@ -3223,6 +3223,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .intro-audio__controls-button svg {
