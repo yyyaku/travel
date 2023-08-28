@@ -4,12 +4,13 @@
 }
 
 .intro-header--opened {
-  padding: 0 0 346px;
-  background-color: $color-default-white;
-  z-index: 2;
+  height: 100%;
+  background-color: $color-black-opacity50;
+  z-index: 3;
 
   .intro-header__link {
     color: $color-default-project;
+    z-index: 3;
 
     @include hover-focus {
       color: $color-midnight-blue;
@@ -66,7 +67,7 @@
     width: 112px;
   }
 }
-
+// контейнер ссылки
 .intro-header__info {
   @include vp-1199 {
     display: flex;
