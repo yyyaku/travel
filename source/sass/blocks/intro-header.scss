@@ -57,9 +57,12 @@
 
 // контейнер ссылки
 .intro-header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   @include vp-1199 {
-    display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
     flex-basis: 33%;
   }
 

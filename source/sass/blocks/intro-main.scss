@@ -5,6 +5,7 @@
 .intro-main__text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   text-align: start;
 
   @include vp-1199 {
@@ -47,8 +48,21 @@
   }
 }
 
+.intro-main__text a {
+  min-width: 220px;
+
+  @include vp-1199 {
+    min-width: 206px;
+  }
+
+  @include vp-1199 {
+    min-width: 180px;
+  }
+}
+
 .intro-main__details {
   display: flex;
+  flex-wrap: wrap;
   gap: 0 10px;
   margin: 0;
   padding: 0;
