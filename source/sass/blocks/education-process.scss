@@ -26,77 +26,22 @@
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 25px;
     padding: 0 37px;
-  }
-
-  // синяя линия на мобилке
-  &::after {
-    @include vp-767 {
-      content: "";
-      position: absolute;
-      top: 10%;
-      left: 10px;
-      width: 1px;
-      height: 80%;
-      background-color: $color-bright-blue;
-    }
   }
 }
 
 .education-process__item {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 25px auto;
   gap: 0 15px;
   padding: 32px 0;
-
-  // синяя линия на планшете
-  @include vp-1199 {
-    &:nth-child(3n + 1) {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 110%;
-        height: 1px;
-        background-color: $color-bright-blue;
-      }
-    }
-
-    &:nth-child(4n + 2) {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        width: 1px;
-        height: 100%;
-        background-color: $color-bright-blue;
-      }
-    }
-
-    &:nth-child(3n) {
-      grid-column: 2/3;
-    }
-
-    &:nth-child(4n) {
-      grid-row: 2/3;
-    }
-  }
-
-  @include vp-767 {
-    &::after {
-      display: none;
-    }
-  }
-
   // синий круг
   &::before {
     content: "";
@@ -113,6 +58,121 @@
       transform: translateY(50%);
     }
   }
+
+  // синяя линия на планшете
+  @include vp-1199 {
+    &:nth-child(1) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-bright-blue;
+      }
+    }
+
+    &:nth-child(4n) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-bright-blue;
+      }
+    }
+
+    &:nth-child(6n) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 1px;
+        background-color: $color-bright-blue;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: $color-bright-blue;
+      }
+    }
+
+    &:nth-child(5) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: $color-bright-blue;
+      }
+    }
+
+    &:nth-child(7) {
+      grid-column: 2/3;
+      grid-row: 4/5;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: $color-bright-blue;
+      }
+    }
+  }
+
+  @include vp-767 {
+    // синяя линия
+    &:nth-child(1n) {
+      &::after {
+        @include vp-767 {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -30px;
+          width: 1px;
+          height: 100%;
+          background-color: $color-bright-blue;
+        }
+      }
+    }
+
+    &:first-child {
+      &::after {
+       height: 50%;
+      }
+    }
+
+    &:last-child {
+      &::after {
+       height: 50%;
+       top: 0;
+      }
+    }
+  }
+}
+
+.education-process__item svg {
+  align-self: center;
 }
 
 .education-process__item h4 {
