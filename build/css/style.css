@@ -4833,6 +4833,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .contacts__item a {
   color: #2d383f;
 }
+.contacts__item a:hover {
+  color: #1c3374;
+}
+.contacts__item a:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
+.contacts__item a:focus {
+  outline: none;
+}
+.contacts__item a:active {
+  color: #0266c1;
+}
+.contacts__item a:disabled {
+  color: rgba(255, 255, 255, 0.1);
+}
 
 .contacts__map {
   margin: 98px 0 0 0;
@@ -4925,6 +4941,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+}
+.footer__copyright:hover {
+  color: #1c3374;
+}
+.footer__copyright:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
+.footer__copyright:focus {
+  outline: none;
+}
+.footer__copyright:active {
+  color: #0266c1;
+}
+.footer__copyright:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-header {

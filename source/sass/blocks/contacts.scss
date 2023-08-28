@@ -111,6 +111,20 @@
 
 .contacts__item a {
   color: $color-default-project;
+
+  @include hover-focus {
+    color: $color-midnight-blue;
+  }
+
+  @include focus;
+
+  @include active {
+    color: $color-bright-blue;
+  }
+
+  @include disabled {
+    color: $color-white-opacity10;
+  }
 }
 
 .contacts__map {
