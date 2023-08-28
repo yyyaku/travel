@@ -60,18 +60,28 @@
   list-style-type: none;
 
   @include vp-1199 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 }
 
 .advantages-card {
   @include vp-1199 {
+    flex-basis: calc(50% - 15px);
     border: 1px solid $color-bright-blue-opacity10;
+  }
+
+  @include vp-767 {
+    flex-basis: 100%;
   }
 }
 
 .advantages__buttons {
   justify-content: center;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
