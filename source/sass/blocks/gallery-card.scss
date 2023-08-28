@@ -7,6 +7,10 @@
   }
 }
 
+.gallery-card__image {
+  background-color: $color-dark-blue;
+}
+
 .gallery-card__image--secondory {
   display: flex;
   flex-direction: column;
