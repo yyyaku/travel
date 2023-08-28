@@ -48,25 +48,13 @@
   }
 }
 
-.intro-header__logo,
-.intro-header__logo-black {
+.intro-header__logo {
   @include vp-1199 {
     flex-basis: 33%;
+    z-index: 4;
   }
 }
 
-.intro-header__logo img,
-.intro-header__logo-black img {
-  @include vp-1199 {
-    margin: 0 auto;
-    width: 144px;
-  }
-
-  @include vp-767 {
-    margin: 0 0 0 auto;
-    width: 112px;
-  }
-}
 // контейнер ссылки
 .intro-header__info {
   @include vp-1199 {

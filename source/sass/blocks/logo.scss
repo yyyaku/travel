@@ -1,33 +1,33 @@
 .logo {
   cursor: pointer;
 
-  @include hover {
-    & img {
-      border-bottom: 1px solid $color-default-white;
-    }
+  & svg {
+    fill: $color-default-white;
   }
 
-  @include focus-visible {
-    & img {
-      border: 1px solid $color-default-white;
+  @include hover-focus {
+    & svg {
+      fill: $color-midnight-blue;
     }
   }
 
   @include focus;
+
+  @include active {
+    & svg {
+      fill: $color-bright-blue;
+    }
+  }
+
+  @include disabled {
+    & svg {
+      fill: $color-white-opacity10;
+    }
+  }
 }
 
 .logo--dark {
-  @include hover {
-    & img {
-      border-bottom: 1px solid $color-default-project;
-    }
+  & svg {
+    fill: $color-default-project;
   }
-
-  @include focus-visible {
-    & img {
-      border: 1px solid $color-default-project;
-    }
-  }
-
-  @include focus;
 }

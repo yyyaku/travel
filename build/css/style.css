@@ -1463,30 +1463,30 @@ button,
 .logo {
   cursor: pointer;
 }
-.logo:hover img {
-  border-bottom: 1px solid #ffffff;
+.logo svg {
+  fill: #ffffff;
+}
+.logo:hover svg {
+  fill: #1c3374;
 }
 .logo:focus-visible {
   outline: none;
 }
-.logo:focus-visible img {
-  border: 1px solid #ffffff;
+.logo:focus-visible svg {
+  fill: #1c3374;
 }
 .logo:focus {
   outline: none;
 }
+.logo:active svg {
+  fill: #0266c1;
+}
+.logo:disabled svg {
+  fill: rgba(255, 255, 255, 0.1);
+}
 
-.logo--dark:hover img {
-  border-bottom: 1px solid #2d383f;
-}
-.logo--dark:focus-visible {
-  outline: none;
-}
-.logo--dark:focus-visible img {
-  border: 1px solid #2d383f;
-}
-.logo--dark:focus {
-  outline: none;
+.logo--dark svg {
+  fill: #2d383f;
 }
 
 .swiper-buttons {
@@ -2572,25 +2572,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 @media (max-width: 1199px) {
-  .intro-header__logo,
-.intro-header__logo-black {
+  .intro-header__logo {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
-  }
-}
-
-@media (max-width: 1199px) {
-  .intro-header__logo img,
-.intro-header__logo-black img {
-    margin: 0 auto;
-    width: 144px;
-  }
-}
-@media (max-width: 767px) {
-  .intro-header__logo img,
-.intro-header__logo-black img {
-    margin: 0 0 0 auto;
-    width: 112px;
+    z-index: 4;
   }
 }
 
