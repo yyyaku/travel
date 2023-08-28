@@ -24,55 +24,57 @@
     <main>
       <h1 class="visually-hidden">Travel</h1>
       <section class="intro intro--caucasus">
+        <div class="intro-header">
+          <div class="intro-header__wrapper">
+            <a class="intro-header__logo logo" href="index.html">
+              <img src="./img/svg/logo.svg" width="205" height="62" alt="Логотип.">
+            </a>
+            <a class="intro-header__logo-black logo logo--dark visually-hidden" href="index.html">
+              <img src="./img/svg/logo-black.svg" width="205" height="62" alt="Логотип.">
+            </a>
+            <nav class="main-nav main-nav--closed">
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+                  меню.</span></button>
+              <ul class="site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">
+                    Туры
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">
+                    Обучение
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">
+                    О нас
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">
+                    Фотографии
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="intro-header__info">
+              <a class="intro-header__link" href="tel:+78007253232">8 800 725 32 32</a>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="intro__wrapper">
-            <div class="intro-header">
-              <a class="intro-header__logo" href="index.html">
-                <img src="./img/svg/logo.svg" width="205" height="62" alt="Логотип.">
-              </a>
-              <a class="intro-header__logo-black visually-hidden" href="index.html">
-                <img src="./img/svg/logo-black.svg" width="205" height="62" alt="Логотип.">
-              </a>
-              <nav class="main-nav main-nav--closed">
-                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
-                    меню.</span></button>
-                <ul class="site-list">
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="#">
-                      Туры
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="#">
-                      Обучение
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="#">
-                      О нас
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="#">
-                      Отзывы
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="#">
-                      Фотографии
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="#">
-                      Контакты
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="intro-header__info">
-                <a href="tel:+78007253232">8 800 725 32 32</a>
-              </div>
-            </div>
             <div class="intro__swiper swiper">
               <ul class="intro__list swiper-wrapper">
                 <li class="intro__item intro__item--caucasus swiper-slide" tabindex="0">
@@ -84,20 +86,20 @@
                         горы Чегет.</p>
                       <a href="#" class="btn">Смотреть тур</a>
                     </div>
-                    <div class="intro-main__details">
-                      <button type="button">
+                    <ul class="intro-main__details">
+                      <li class="intro-main__details-item">
                         <svg width="11" height="11">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
                         <span>6 дней/5 ночей</span>
-                      </button>
-                      <button type="button">
+                      </li>
+                      <li class="intro-main__details-item">
                         <svg width="10" height="11">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
                         <span>Высокая сложность</span>
-                      </button>
-                    </div>
+                      </li>
+                    </ul>
                     <div class="intro-video">
                       <div class="intro-video__wrapper">
                         <picture>
@@ -124,20 +126,20 @@
                         нетронутых уголков дикой природы в мире.</p>
                       <a href="#" class="btn">Смотреть тур</a>
                     </div>
-                    <div class="intro-main__details">
-                      <button type="button">
+                    <ul class="intro-main__details">
+                      <li class="intro-main__details-item">
                         <svg width="11" height="11">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
-                        <span>9 дней/10 ночей</span>
-                      </button>
-                      <button type="button">
+                        <span>6 дней/5 ночей</span>
+                      </li>
+                      <li class="intro-main__details-item">
                         <svg width="10" height="11">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
-                        <span>Средняя сложность</span>
-                      </button>
-                    </div>
+                        <span>Высокая сложность</span>
+                      </li>
+                    </ul>
                     <div class="intro-photo">
                       <div class="intro-photo__wrapper">
                         <div class="intro-photo__primary">
@@ -180,42 +182,83 @@
                         дух ландшафтов Алтайских гор. </p>
                       <a href="#" class="btn">Смотреть тур</a>
                     </div>
-                    <div class="intro-main__details">
-                      <button type="button">
+                    <ul class="intro-main__details">
+                      <li class="intro-main__details-item">
                         <svg width="11" height="11">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
-                        <span>8 дней/7 ночей</span>
-                      </button>
-                      <button type="button">
+                        <span>6 дней/5 ночей</span>
+                      </li>
+                      <li class="intro-main__details-item">
                         <svg width="10" height="11">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
-                        <span>Легкая сложность</span>
-                      </button>
-                    </div>
+                        <span>Высокая сложность</span>
+                      </li>
+                    </ul>
                     <div class="intro-audio">
-                      <div class="intro-audio__wrapper">
-                        <div class="intro-audio__text">
+                      <div class="intro-audio__content">
+                        <div class="intro-audio__info">
                           <h3>Алтай</h3>
                           <p>Lifetour</p>
-                          <ul class="intro-audio__like-btns">
-                            <li class="intro-audio__like-btn">
-                              <a class="intro-audio__like-link" href="#">
-                                <svg width="17" height="17">
-                                  <use href="img/sprite.svg#like"></use>
-                                </svg>
-                              </a>
-                            </li>
-                            <li class="intro-audio__like-btn">
-                              <a class="intro-audio__like-link" href="#">
-                                <svg width="17" height="17">
-                                  <use href="img/sprite.svg#share"></use>
-                                </svg>
-                              </a>
-                            </li>
-                          </ul>
                         </div>
+                        <ul class="intro-audio__icons">
+                          <li class="intro-audio__icon">
+                            <a href="#">
+                              <svg width="17" height="17">
+                                <use href="img/sprite.svg#like"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="intro-audio__icon">
+                            <a href="#">
+                              <svg width="17" height="17">
+                                <use href="img/sprite.svg#share"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="intro-audio__progress">
+                        <div class="intro-audio__scale">
+                          <div class="intro-audio__bar" style="left: 0; width: 148px">
+                            <button class="intro-audio__toggle" type="button"><span class="visually-hidden">Изменить
+                                время проигрывателя.</span></button>
+                          </div>
+                        </div>
+                        <div class="intro-audio__timeline">
+                          <span>2:30</span>
+                          <span>4:16</span>
+                        </div>
+                      </div>
+                      <div class="intro-audio__controls">
+                        <button class="intro-audio__controls-button intro-audio__shuffle">
+                          <svg width="25" height="25">
+                            <use href="img/sprite.svg#audio-shuffle"></use>
+                          </svg>
+                        </button>
+                        <div class="intro-audio__controls-play">
+                          <button class="intro-audio__controls-button intro-audio__prev">
+                            <svg width="22" height="22">
+                              <use href="img/sprite.svg#audio-prev"></use>
+                            </svg>
+                          </button>
+                          <button class="intro-audio__controls-button intro-audio__play">
+                            <svg width="47" height="47">
+                              <use href="img/sprite.svg#audio-play"></use>
+                            </svg>
+                          </button>
+                          <button class="intro-audio__controls-button intro-audio__shuffle">
+                            <svg width="22" height="22">
+                              <use href="img/sprite.svg#audio-next"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="intro-audio__controls-button intro-audio__shuffle">
+                          <svg width="25" height="25">
+                            <use href="img/sprite.svg#audio-repeat"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -457,7 +500,7 @@
                     </picture>
                     <div class="instructor-card__info">
                       <h4>Александр Прокофьев</h4>
-                      <a class="instructor-card__link" href="#">
+                      <a class="instructor-card__link icon" href="#">
                         <svg width="14" height="8">
                           <use href="img/sprite.svg#vk"></use>
                         </svg>
@@ -485,7 +528,7 @@
                     </picture>
                     <div class="instructor-card__info">
                       <h4>Светлана Афиногенова</h4>
-                      <a class="instructor-card__link" href="#">
+                      <a class="instructor-card__link icon" href="#">
                         <svg width="14" height="8">
                           <use href="img/sprite.svg#vk"></use>
                         </svg>
@@ -514,7 +557,7 @@
                     </picture>
                     <div class="instructor-card__info">
                       <h4>Надежда Колесниченко</h4>
-                      <a class="instructor-card__link" href="#">
+                      <a class="instructor-card__link icon" href="#">
                         <svg width="14" height="8">
                           <use href="img/sprite.svg#vk"></use>
                         </svg>
@@ -543,7 +586,7 @@
                     </picture>
                     <div class="instructor-card__info">
                       <h4>Федор Кайгородов</h4>
-                      <a class="instructor-card__link" href="#">
+                      <a class="instructor-card__link icon" href="#">
                         <svg width="14" height="8">
                           <use href="img/sprite.svg#vk"></use>
                         </svg>
@@ -1004,7 +1047,7 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer-header">
-            <a class="footer-header__logo" href="index.html">
+            <a class="footer-header__logo logo logo--dark" href="index.html">
               <img src="./img/svg/logo-black.svg" width="205" height="62" alt="Логотип.">
             </a>
             <nav class="footer-header__nav">
@@ -1047,7 +1090,7 @@
           </div>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link icon" href="#">
                 <svg width="16" height="9">
                   <use href="img/sprite.svg#vk"></use>
                 </svg>
@@ -1055,7 +1098,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link icon" href="#">
                 <svg width="9" height="16">
                   <use href="img/sprite.svg#odnoklassniki"></use>
                 </svg>
@@ -1063,7 +1106,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link icon" href="#">
                 <svg width="14" height="15">
                   <use href="img/sprite.svg#reddit"></use>
                 </svg>

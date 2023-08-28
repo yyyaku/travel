@@ -10,10 +10,9 @@
 }
 
 .site-list__link {
-  padding: 23px 0;
-  color: $color-default-white;
+  padding: 3px 5px;
   background-color: transparent;
-  border: 0;
+  border: 1px solid transparent;
   font-size: 16px;
   line-height: 16px;
 
@@ -21,12 +20,36 @@
   @include vp-1199 {
     position: relative;
     display: block;
-    padding: 0;
     color: $color-default-project;
-    background-color: transparent;
     letter-spacing: 0.64px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+
+    @include vp-1199 {
+      border-bottom: 1px solid $color-default-project;
+    }
+  }
+
+  @include focus-visible {
+    border: 1px solid $color-default-white;
+
+    @include vp-1199 {
+      border: 1px solid $color-default-project;
+    }
+  }
+
+  @include focus;
+
+  @include disabled {
+    color: $color-white-opacity50;
+
+    @include vp-1199 {
+      color: $color-black-opacity50;
+    }
   }
 }

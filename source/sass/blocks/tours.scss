@@ -69,6 +69,35 @@
     line-height: 14px;
     letter-spacing: 0.56px;
   }
+
+  @include hover-focus {
+    color: $color-midnight-blue;
+
+    & span {
+      border-top: 3px solid $color-midnight-blue;
+      border-right: 3px solid $color-midnight-blue;
+    }
+  }
+
+  @include focus;
+
+  @include active {
+    color: $color-bright-blue;
+
+    & span {
+      border-top: 3px solid $color-bright-blue;
+      border-right: 3px solid $color-bright-blue;
+    }
+  }
+
+  @include disabled {
+    color: $color-bright-blue-opacity10;
+
+    & span {
+      border-top: 3px solid $color-bright-blue-opacity10;
+      border-right: 3px solid $color-bright-blue-opacity10;
+    }
+  }
 }
 
 .tours__link span {
@@ -76,7 +105,7 @@
   width: 10px;
   height: 10px;
   cursor: pointer;
-  border-top: 1px solid $color-default-project;
-  border-right: 1px solid $color-default-project;
+  border-top: 3px solid $color-default-project;
+  border-right: 3px solid $color-default-project;
   transform: rotate(45deg);
 }

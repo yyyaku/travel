@@ -10,7 +10,8 @@
   width: 37px;
   height: 35px;
   background-color: $color-bright-blue;
-  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -22,6 +23,49 @@
     height: 1px;
     background-color: $color-default-white;
   }
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    border: 1px solid $color-midnight-blue;
+
+    &::before {
+      background-color: $color-midnight-blue;
+    }
+
+    .swiper-buttons__arrow {
+      border-top: 1px solid $color-midnight-blue;
+      border-right: 1px solid $color-midnight-blue;
+    }
+  }
+
+  @include focus;
+
+  @include active {
+    background-color: $color-midnight-blue;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    .swiper-buttons__arrow {
+      border-top: 1px solid $color-default-white;
+      border-right: 1px solid $color-default-white;
+    }
+  }
+
+  @include disabled {
+    background-color: $color-bright-blue-opacity10;
+    cursor: not-allowed;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    .swiper-buttons__arrow {
+      border-top: 1px solid $color-default-white;
+      border-right: 1px solid $color-default-white;
+    }
+  }
 }
 
 .swiper-buttons__arrow {
@@ -29,16 +73,14 @@
   width: 10px;
   height: 10px;
   cursor: pointer;
+  border-top: 1px solid $color-default-white;
+  border-right: 1px solid $color-default-white;
 
   &--prev {
-    border-top: 1px solid $color-default-white;
-    border-right: 1px solid $color-default-white;
     transform: rotate(-135deg);
   }
 
   &--next {
-    border-top: 1px solid $color-default-white;
-    border-right: 1px solid $color-default-white;
     transform: rotate(45deg);
   }
 }
