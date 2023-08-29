@@ -5,6 +5,7 @@
   line-height: 21px;
 
   @include vp-1199 {
+    margin: 0 0 23px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -26,7 +27,7 @@
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    gap: 55px 30px;
   }
 
   @include vp-767 {
@@ -42,6 +43,12 @@
   grid-template-columns: 25px auto;
   gap: 0 10px;
   padding: 0 0 35px;
+
+  @include vp-1199 {
+    gap: 0 15px;
+    padding: 18px 0;
+  }
+
   // синий круг
   &::before {
     content: "";
@@ -62,87 +69,73 @@
   // синяя линия на планшете
   @include vp-1199 {
     &:nth-child(1) {
+      // синяя линия
       &::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: calc(100% + 30px);
         height: 1px;
+        background-color: $color-bright-blue;
+      }
+    }
+
+    &:nth-child(3n) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+
+      // синий круг
+      &::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $color-bright-blue;
+      }
+      // синяя линия
+      &::after {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 7px;
+        width: 1px;
+        height: 50px;
         background-color: $color-bright-blue;
       }
     }
 
     &:nth-child(4n) {
+
+      // синий круг
+      &::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $color-bright-blue;
+      }
+      // синяя линия
       &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
-        width: 100%;
+        width: calc(100% + 30px);
         height: 1px;
-        background-color: $color-bright-blue;
-      }
-    }
-
-    &:nth-child(6n) {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: -100%;
-        width: 100%;
-        height: 1px;
-        background-color: $color-bright-blue;
-      }
-    }
-
-    &:nth-child(3) {
-      grid-column: 2/3;
-      grid-row: 2/3;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
-        background-color: $color-bright-blue;
-      }
-    }
-
-    &:nth-child(5) {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
-        background-color: $color-bright-blue;
-      }
-    }
-
-    &:nth-child(7) {
-      grid-column: 2/3;
-      grid-row: 4/5;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
         background-color: $color-bright-blue;
       }
     }
   }
 
   @include vp-767 {
-    // синяя линия
     &:nth-child(1n) {
+
+      // синяя линия
       &::after {
         @include vp-767 {
           content: "";
@@ -158,14 +151,14 @@
 
     &:first-child {
       &::after {
-       height: 50%;
+        height: 50%;
       }
     }
 
     &:last-child {
       &::after {
-       height: 50%;
-       top: 0;
+        height: 50%;
+        top: 0;
       }
     }
   }
@@ -179,8 +172,10 @@
   margin: 0;
 
   @include vp-1199 {
+    max-width: 220px;
     font-size: 14px;
     line-height: 22px;
+    font-weight: 400;
   }
 
   @include vp-767 {

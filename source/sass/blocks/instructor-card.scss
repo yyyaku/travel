@@ -4,6 +4,7 @@
   box-shadow: 0 0 30px $color-midnight-blue-opacity10;
 
   @include vp-1199 {
+    padding: 15px;
     min-height: 411px;
   }
 
@@ -26,7 +27,7 @@
 .instructor-card__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px 0;
+  gap: 13px 0;
 }
 
 .instructor-card__info h4 {

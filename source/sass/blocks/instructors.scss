@@ -1,5 +1,9 @@
 .instructors {
   margin: 0 0 50px;
+
+  @include vp-1199 {
+    margin: 0 0 42px;
+  }
 }
 
 .instructors__header {
@@ -7,6 +11,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 0 35px;
+
+  @include vp-1199 {
+    margin: 0 0 24px;
+  }
 }
 
 .instructors__header h3 {
