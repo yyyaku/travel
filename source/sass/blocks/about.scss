@@ -16,9 +16,15 @@
 .about__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 95px 0;
+
+  @include vp-1199 {
+    padding: 72px 0;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    padding: 6px 0;
   }
 }
 
@@ -33,20 +39,27 @@
 }
 
 .about__content {
+  padding: 35px 0 66px 75px;
+
+  @include vp-1199 {
+    padding: 0 0 0 38px;
+  }
+
   @include vp-767 {
-    padding: 0 15px;
+    padding: 46px 15px 55px;
   }
 }
 
 .about__content h2 {
   position: relative;
-  margin: 0;
+  margin: 0 0 56px;
   color: $color-granite;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
 
   @include vp-1199 {
+    margin: 0 0 34px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -82,8 +95,20 @@
   list-style-type: none;
 }
 
+.about__item:first-child {
+  margin: 0 0 30px;
+
+  @include vp-1199 {
+    margin: 0 0 27px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 42px;
+  }
+}
+
 .about__item h3 {
-  margin: 0;
+  margin: 0 0 17px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;

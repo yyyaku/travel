@@ -17,6 +17,7 @@ const initSliderInstructors = () => {
       breakpoints: {
         1200: {
           slidesPerView: 4,
+          spaceBetween: 30,
         },
 
         768: {
