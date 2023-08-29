@@ -15,8 +15,9 @@ const initSliderAdvantages = () => {
           prevEl: buttonPrev,
         },
 
-        slidesPerView: 3,
-        spaceBetween: 40,
+        slidesPerView: 3.6,
+        centeredSlides: true,
+        spaceBetween: 30,
       });
     }
   } else {

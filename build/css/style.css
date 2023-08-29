@@ -4533,9 +4533,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
+.advantages__wrapper {
+  padding: 137px 0;
+}
+
 .advantages__wrapper h2 {
   position: relative;
-  margin: 0;
+  margin: 0 0 46px;
   color: #2d383f;
   text-align: center;
   font-size: 35px;
@@ -4580,6 +4584,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
+.advantages__swiper {
+  margin: 0 0 50px;
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -4596,20 +4604,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .advantages-card {
-    -ms-flex-preferred-size: calc(50% - 15px);
-        flex-basis: calc(50% - 15px);
-    border: 1px solid rgba(2, 102, 193, 0.1);
-  }
-}
-@media (max-width: 767px) {
-  .advantages-card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
 }
 
@@ -4637,6 +4631,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
           align-items: center;
   gap: 30px 0;
   padding: 40px 20px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+@media (max-width: 1199px) {
+  .advantages-card {
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .advantages-card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .advantages-card__icon {
