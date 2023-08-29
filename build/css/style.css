@@ -2477,6 +2477,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 0 0 60px;
   }
 }
+@media (max-width: 767px) {
+  .intro__swiper {
+    padding: 0 0 103px;
+  }
+}
 
 .intro__swiper .swiper-pagination {
   position: absolute;
@@ -2494,6 +2499,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__swiper .swiper-pagination {
+    gap: 3px;
   }
 }
 
@@ -2576,7 +2586,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 6px 0;
+    gap: 8px 0;
     padding: 15px 15px 0;
   }
 }
@@ -2699,6 +2709,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav__toggle {
+    top: 2px;
   }
 }
 
@@ -2866,6 +2881,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     margin: 0 0 50px;
   }
 }
+@media (max-width: 767px) {
+  .intro-main__text {
+    margin: 0 0 10px;
+  }
+}
 
 .intro-main__text h2 {
   margin: 0 0 22px;
@@ -2884,6 +2904,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .intro-main__text h2 {
     font-size: 30px;
     line-height: 30px;
+    margin: 0 0 15px;
   }
 }
 
@@ -2915,6 +2936,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .intro-main__text a {
+    padding: 17px;
     min-width: 180px;
   }
 }

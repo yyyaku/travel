@@ -20,6 +20,10 @@
     border: none;
     cursor: pointer;
   }
+
+  @include vp-767 {
+    top: 2px;
+  }
 }
 // бурегер
 .main-nav--closed .main-nav__toggle::before {
