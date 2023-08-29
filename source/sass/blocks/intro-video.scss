@@ -1,6 +1,6 @@
 .intro-video {
   position: absolute;
-  top: 0;
+  top: 120px;
   right: 0;
 
   @include vp-1199 {
@@ -57,9 +57,9 @@
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
-    border-top: 8px solid transparent;
-    border-left: 16px solid $color-default-white;
-    border-bottom: 8px solid transparent;
+    border-top: 12px solid transparent;
+    border-left: 10px solid $color-default-white;
+    border-bottom: 12px solid transparent;
   }
 
   @include hover-focus {
