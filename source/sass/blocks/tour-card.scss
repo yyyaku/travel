@@ -101,6 +101,10 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @include vp-767 {
+    margin: 0 0 30px;
+  }
 }
 
 .tour-card__row {
@@ -115,6 +119,13 @@
 
 .tour-card__row:first-child {
   margin: 0 0 23px;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 70px;
+    gap: 15px;
+    margin: 0 0 15px;
+  }
 }
 
 .tour-card__icon {
@@ -138,6 +149,11 @@
       gap: 6px;
       padding: 8px 0 8px 15px;
       width: 97px;
+    }
+
+    @include vp-767 {
+      grid-column: 1/4;
+      grid-row: 2/3;
     }
   }
 }
@@ -168,5 +184,9 @@
   @include vp-767 {
     font-size: 12px;
     line-height: 12px;
+  }
+
+  @include vp-767 {
+    margin: 6px 0 5px;
   }
 }

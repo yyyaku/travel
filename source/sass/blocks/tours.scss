@@ -4,6 +4,10 @@
   @include vp-1199 {
     padding: 88px 0;
   }
+
+  @include vp-767 {
+    padding: 66px 0;
+  }
 }
 
 .tours__header {
@@ -13,6 +17,10 @@
 
   @include vp-1199 {
     margin: 0 0 33px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 28px;
   }
 }
 
@@ -62,6 +70,11 @@
 
   @include vp-1199 {
     padding: 0 6px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    margin: 0 0 29px;
   }
 }
 
@@ -129,4 +142,8 @@
   border-top: 3px solid $color-default-project;
   border-right: 3px solid $color-default-project;
   transform: rotate(45deg);
+
+  @include vp-767 {
+    margin: 0 0 0 5px;
+  }
 }

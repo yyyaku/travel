@@ -3326,6 +3326,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 88px 0;
   }
 }
+@media (max-width: 767px) {
+  .tours__wrapper {
+    padding: 66px 0;
+  }
+}
 
 .tours__header {
   display: -webkit-box;
@@ -3339,6 +3344,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .tours__header {
     margin: 0 0 33px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__header {
+    margin: 0 0 28px;
   }
 }
 
@@ -3392,6 +3402,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .tours__swiper {
     padding: 0 6px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__swiper {
+    padding: 0;
+    margin: 0 0 29px;
   }
 }
 
@@ -3473,6 +3489,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+@media (max-width: 767px) {
+  .tours__link span {
+    margin: 0 0 0 5px;
+  }
 }
 
 .tour-card {
@@ -3600,6 +3621,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     line-height: 24px;
   }
 }
+@media (max-width: 767px) {
+  .tour-card__link h3 {
+    margin: 0 0 30px;
+  }
+}
 
 .tour-card__row {
   display: -webkit-box;
@@ -3620,6 +3646,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .tour-card__row:first-child {
   margin: 0 0 23px;
+}
+@media (max-width: 767px) {
+  .tour-card__row:first-child {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 70px;
+    grid-template-columns: 1fr 1fr 70px;
+    gap: 15px;
+    margin: 0 0 15px;
+  }
 }
 
 .tour-card__icon {
@@ -3655,6 +3691,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
     width: 97px;
   }
 }
+@media (max-width: 767px) {
+  .tour-card__icon--name {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
 
 .tour-card__icon svg {
   fill: #ffffff;
@@ -3683,6 +3729,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .tour-card__info p {
     font-size: 12px;
     line-height: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .tour-card__info p {
+    margin: 6px 0 5px;
   }
 }
 
