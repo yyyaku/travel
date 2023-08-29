@@ -4180,7 +4180,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  padding: 95px 0;
+  padding: 95px 0 40px;
 }
 @media (max-width: 1199px) {
   .about__wrapper {
@@ -4336,7 +4336,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 58px;
+  margin: 0 0 40px;
   padding: 0 120px 0 0;
 }
 @media (max-width: 1199px) {
@@ -4352,7 +4352,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .reviews__header h2 {
   position: relative;
-  margin: 0;
+  margin: 15px 0 -15px;
   color: #2d383f;
   font-size: 35px;
   font-weight: 800;
@@ -4444,7 +4444,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px 0;
+  padding: 15px 0 10px;
   max-width: 442px;
 }
 @media (max-width: 1199px) {
@@ -4470,6 +4470,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
     font-size: 12px;
     line-height: 18px;
   }
+}
+
+.reviews-card__text p:first-child {
+  margin: 0 0 10px;
 }
 
 .reviews-card__name h3 {

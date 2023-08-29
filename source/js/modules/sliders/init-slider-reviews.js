@@ -16,7 +16,7 @@ const initSliderReviews = () => {
 
       breakpoints: {
         1200: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.645,
           spaceBetween: 30,
         },
 

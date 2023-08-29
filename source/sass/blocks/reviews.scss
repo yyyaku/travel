@@ -16,7 +16,7 @@
 .reviews__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 58px;
+  margin: 0 0 40px;
   padding: 0 120px 0 0;
 
   @include vp-1199 {
@@ -30,7 +30,7 @@
 
 .reviews__header h2 {
   position: relative;
-  margin: 0;
+  margin: 15px 0 -15px;
   color: $color-granite;
   font-size: 35px;
   font-weight: 800;

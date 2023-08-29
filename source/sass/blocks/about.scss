@@ -16,7 +16,7 @@
 .about__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 95px 0;
+  padding: 95px 0 40px;
 
   @include vp-1199 {
     padding: 72px 0;
