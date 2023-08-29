@@ -11,6 +11,7 @@
   }
 
   @include vp-767 {
+    margin: 0 0 18px 4px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -33,6 +34,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    gap: 0;
     padding: 0 37px;
   }
 }
@@ -49,6 +51,11 @@
     padding: 18px 0;
   }
 
+  @include vp-767 {
+    gap: 0 6px;
+    padding: 12px 0;
+  }
+
   // синий круг
   &::before {
     content: "";
@@ -58,12 +65,6 @@
     height: 14px;
     border-radius: 50%;
     background-color: $color-bright-blue;
-
-    @include vp-767 {
-      bottom: 50%;
-      left: -34px;
-      transform: translateY(50%);
-    }
   }
 
   // синяя линия на планшете
@@ -84,7 +85,6 @@
     &:nth-child(3n) {
       grid-column: 2/3;
       grid-row: 2/3;
-
       // синий круг
       &::before {
         content: "";
@@ -108,7 +108,6 @@
     }
 
     &:nth-child(4n) {
-
       // синий круг
       &::before {
         content: "";
@@ -134,14 +133,26 @@
 
   @include vp-767 {
     &:nth-child(1n) {
+      // синий круг
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -34px;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $color-bright-blue;
+      }
 
       // синяя линия
       &::after {
         @include vp-767 {
           content: "";
           position: absolute;
-          bottom: 0;
-          left: -30px;
+          left: -27px;
+          top: 0;
           width: 1px;
           height: 100%;
           background-color: $color-bright-blue;
@@ -152,6 +163,7 @@
     &:first-child {
       &::after {
         height: 50%;
+        top: 50%;
       }
     }
 
@@ -166,6 +178,11 @@
 
 .education-process__item svg {
   align-self: center;
+
+  @include vp-767 {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .education-process__item h4 {
