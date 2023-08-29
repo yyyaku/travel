@@ -2460,7 +2460,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .intro__wrapper {
-    padding: 174px 0 90px;
+    padding: 174px 0 92px;
   }
 }
 @media (max-width: 767px) {
@@ -2471,6 +2471,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .intro__swiper {
   position: relative;
+}
+@media (max-width: 1199px) {
+  .intro__swiper {
+    padding: 0 0 60px;
+  }
 }
 
 .intro__swiper .swiper-pagination {
@@ -2488,6 +2493,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 7px;
   }
 }
 
@@ -2591,6 +2597,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
+@media (max-width: 1199px) {
+  .intro-header__logo svg {
+    width: 144px;
+    height: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-header__logo svg {
+    width: 112px;
+    height: 34px;
+  }
+}
+
 .intro-header__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2668,7 +2687,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .main-nav__toggle {
     position: absolute;
-    top: 30px;
+    top: 27px;
     -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
             transform: translateY(50%);
@@ -2844,6 +2863,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin: 0 0 50px;
   }
 }
 
@@ -2855,7 +2875,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .intro-main__text h2 {
-    margin: 0 0 15px;
+    margin: 0 0 12px;
     font-size: 56px;
     line-height: 56px;
   }
@@ -2874,7 +2894,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .intro-main__text p {
-    margin: 0 0 25px;
+    margin: 0 0 27px;
   }
 }
 @media (max-width: 767px) {
@@ -2893,7 +2913,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     min-width: 206px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .intro-main__text a {
     min-width: 180px;
   }
