@@ -85,6 +85,10 @@
   padding: 23px 25px 23px 20px;
   width: 100%;
   height: 412px;
+
+  @include vp-1199 {
+    padding: 23px 22px 23px 20px;
+  }
 }
 
 .tour-card__link h3 {
@@ -117,7 +121,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 9px;
+  gap: 10px;
+
+  @include vp-1199 {
+    gap: 12px;
+  }
 
   &--name {
     justify-content: flex-start;
@@ -125,6 +133,12 @@
     padding: 8px 0 9px 24px;
     width: 108px;
     background-color: $color-bright-blue;
+
+    @include vp-1199 {
+      gap: 6px;
+      padding: 8px 0 8px 15px;
+      width: 97px;
+    }
   }
 }
 

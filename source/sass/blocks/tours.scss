@@ -1,11 +1,19 @@
 .tours__wrapper {
   padding: 123px 0;
+
+  @include vp-1199 {
+    padding: 88px 0;
+  }
 }
 
 .tours__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 54px;
+  margin: 0 0 54px;
+
+  @include vp-1199 {
+    margin: 0 0 33px;
+  }
 }
 
 .tours__header h2 {
@@ -50,7 +58,11 @@
 }
 
 .tours__swiper {
-  margin: 0 0 52px;
+  margin: 0 0 51px;
+
+  @include vp-1199 {
+    padding: 0 6px;
+  }
 }
 
 .tours__list {
