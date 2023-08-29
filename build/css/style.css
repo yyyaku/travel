@@ -2456,7 +2456,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .intro__wrapper {
-  padding: 182px 0 80px;
+  padding: 183px 0 80px;
 }
 @media (max-width: 1199px) {
   .intro__wrapper {
@@ -3318,6 +3318,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   fill: #1c3374;
 }
 
+.tours__wrapper {
+  padding: 123px 0;
+}
+
 .tours__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3325,7 +3329,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 .tours__header h2 {
@@ -3370,6 +3374,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
     font-size: 26px;
     line-height: 26px;
   }
+}
+
+.tours__swiper {
+  margin: 0 0 52px;
 }
 
 .tours__list {
@@ -3441,8 +3449,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 10px;
-  height: 10px;
+  margin: 0 0 0 12px;
+  width: 12px;
+  height: 6px;
   cursor: pointer;
   border-top: 3px solid #2d383f;
   border-right: 3px solid #2d383f;
@@ -3554,13 +3563,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 28px 20px;
+  padding: 23px 25px 23px 20px;
   width: 100%;
   height: 412px;
 }
 
 .tour-card__link h3 {
-  margin: 0;
+  margin: 0 0 37px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -3578,15 +3587,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.tour-card__row:first-child {
+  margin: 0 0 23px;
 }
 
 .tour-card__icon {
@@ -3599,6 +3612,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 9px;
 }
 .tour-card__icon--name {
   -webkit-box-pack: start;
@@ -3628,7 +3642,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .tour-card__info p {
-  margin: 0;
+  margin: 8px 0 5px;
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;

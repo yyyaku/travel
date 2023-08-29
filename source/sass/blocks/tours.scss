@@ -1,7 +1,11 @@
+.tours__wrapper {
+  padding: 123px 0;
+}
+
 .tours__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 .tours__header h2 {
@@ -43,6 +47,10 @@
       line-height: 26px;
     }
   }
+}
+
+.tours__swiper {
+  margin: 0 0 52px;
 }
 
 .tours__list {
@@ -102,8 +110,9 @@
 
 .tours__link span {
   display: inline-flex;
-  width: 10px;
-  height: 10px;
+  margin: 0 0 0 12px;
+  width: 12px;
+  height: 6px;
   cursor: pointer;
   border-top: 3px solid $color-default-project;
   border-right: 3px solid $color-default-project;
