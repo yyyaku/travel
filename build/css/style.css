@@ -3328,7 +3328,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .tours__wrapper {
-    padding: 66px 0;
+    padding: 62px 0 66px;
   }
 }
 
@@ -4222,7 +4222,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .about__content {
-    padding: 46px 15px 55px;
+    padding: 47px 15px 57px;
   }
 }
 
@@ -4243,6 +4243,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .about__content h2 {
+    margin: 0 0 33px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -4302,6 +4303,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .about__item h3 {
+    margin: 0 0 16px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -4353,6 +4355,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .reviews__header {
+    margin: 0 0 30px;
     padding: 0;
   }
 }
@@ -4373,6 +4376,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .reviews__header h2 {
+    margin: 10px 0 -10px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -4413,6 +4417,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   display: flex;
   gap: 0 30px;
   padding: 20px 40px 20px 20px;
+  -webkit-box-shadow: 0 0 30px rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px rgba(28, 51, 116, 0.1);
 }
 @media (max-width: 1199px) {
   .reviews-card {
@@ -4431,6 +4437,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .reviews-card__image {
   background-color: #002137;
+}
+@media (max-width: 767px) {
+  .reviews-card__image {
+    margin: 0 0 16px;
+  }
 }
 
 .reviews-card__image img {

@@ -2,6 +2,7 @@
   display: flex;
   gap: 0 30px;
   padding: 20px 40px 20px 20px;
+  box-shadow: 0 0 30px $color-midnight-blue-opacity10;
 
   @include vp-1199 {
     padding: 20px 30px 20px 20px;
@@ -15,6 +16,10 @@
 
 .reviews-card__image {
   background-color: $color-dark-blue;
+
+  @include vp-767 {
+    margin: 0 0 16px;
+  }
 }
 
 .reviews-card__image img {
