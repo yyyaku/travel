@@ -3756,7 +3756,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .education__wrapper h2 {
   position: relative;
-  margin: 0;
+  margin: 0 0 35px;
   color: #2d383f;
   font-size: 35px;
   font-weight: 800;
@@ -3799,7 +3799,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .education__wrapper p {
-  margin: 0;
+  margin: 0 0 49px;
+  max-width: 820px;
+}
+
+.instructors {
+  margin: 0 0 50px;
 }
 
 .instructors__header {
@@ -3812,6 +3817,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0 35px;
 }
 
 .instructors__header h3 {
@@ -3858,6 +3864,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .instructor-card__image {
   background-color: #002137;
+  margin: 0 0 16px;
 }
 
 .instructor-card__image img {
@@ -3908,7 +3915,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .education-process h3 {
-  margin: 0;
+  margin: 0 0 40px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -3963,13 +3970,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
   display: grid;
   -ms-grid-columns: 25px auto;
   grid-template-columns: 25px auto;
-  gap: 0 15px;
-  padding: 32px 0;
+  gap: 0 10px;
+  padding: 0 0 35px;
 }
 .education-process__item::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
