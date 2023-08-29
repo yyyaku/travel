@@ -3323,7 +3323,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .tours__wrapper {
-    padding: 88px 0;
+    padding: 84px 0 87px;
   }
 }
 @media (max-width: 767px) {
@@ -3343,7 +3343,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .tours__header {
-    margin: 0 0 33px;
+    margin: 0 0 37px;
   }
 }
 @media (max-width: 767px) {
@@ -3362,6 +3362,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .tours__header h2 {
+    margin: 4px 0 0;
     font-size: 25px;
     line-height: 25px;
   }
@@ -3489,6 +3490,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+@media (max-width: 1199px) {
+  .tours__link span {
+    margin: 0 0 0 6px;
+  }
 }
 @media (max-width: 767px) {
   .tours__link span {
@@ -4184,7 +4190,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .about__wrapper {
-    padding: 72px 0;
+    padding: 72px 0 74px;
   }
 }
 @media (max-width: 767px) {
@@ -4230,7 +4236,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .about__content h2 {
-    margin: 0 0 34px;
+    margin: 0 0 35px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -4342,6 +4348,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .reviews__header {
     padding: 0 45px 0 0;
+    margin: 0 0 33px;
   }
 }
 @media (max-width: 767px) {
@@ -4449,7 +4456,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .reviews-card__info {
-    padding: 4.5px 0;
+    padding: 2px 0 0;
     max-width: 294px;
   }
 }

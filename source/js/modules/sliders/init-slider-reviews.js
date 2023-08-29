@@ -21,7 +21,7 @@ const initSliderReviews = () => {
         },
 
         768: {
-          slidesPerView: 1.3,
+          slidesPerView: 1.278,
           spaceBetween: 30,
         },
 

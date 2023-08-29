@@ -2,7 +2,7 @@
   padding: 123px 0;
 
   @include vp-1199 {
-    padding: 88px 0;
+    padding: 84px 0 87px;
   }
 
   @include vp-767 {
@@ -16,7 +16,7 @@
   margin: 0 0 54px;
 
   @include vp-1199 {
-    margin: 0 0 33px;
+    margin: 0 0 37px;
   }
 
   @include vp-767 {
@@ -33,6 +33,7 @@
   line-height: 35px;
 
   @include vp-1199 {
+    margin: 4px 0 0;
     font-size: 25px;
     line-height: 25px;
   }
@@ -142,6 +143,10 @@
   border-top: 3px solid $color-default-project;
   border-right: 3px solid $color-default-project;
   transform: rotate(45deg);
+
+  @include vp-1199 {
+    margin: 0 0 0 6px;
+  }
 
   @include vp-767 {
     margin: 0 0 0 5px;
