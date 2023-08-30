@@ -12,6 +12,7 @@
 
   @include vp-1199 {
     grid-template-columns: 395px 1fr;
+    margin: 0 0 38px;
   }
 
   @include vp-767 {
