@@ -10,12 +10,20 @@
   &--caucasus {
     background-image: url("../img/background/intro/caucasus.jpg");
 
+    @supports (background-image: url("../img/background/intro/caucasus.webp")) {
+      background-image: url("../img/background/intro/caucasus.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro/caucasus@2x.jpg");
     }
 
     @include vp-1199 {
       background-image: url("../img/background/intro/caucasus-tablet.jpg");
+
+      @supports (background-image: url("../img/background/intro/caucasus-tablet.webp")) {
+        background-image: url("../img/background/intro/caucasus-tablet.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/intro/caucasus-tablet@2x.jpg");
@@ -24,6 +32,10 @@
 
     @include vp-767 {
       background-image: url("../img/background/intro/caucasus-mobile.jpg");
+
+      @supports (background-image: url("../img/background/intro/caucasus-mobile.webp")) {
+        background-image: url("../img/background/intro/caucasus-mobile.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/intro/caucasus-mobile@2x.jpg");
@@ -34,12 +46,20 @@
   &--kamchatka {
     background-image: url("../img/background/intro/kamchatka.jpg");
 
+    @supports (background-image: url("../img/background/intro/kamchatka.webp")) {
+      background-image: url("../img/background/intro/kamchatka.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro/kamchatka@2x.jpg");
     }
 
     @include vp-1199 {
       background-image: url("../img/background/intro/kamchatka-tablet.jpg");
+
+      @supports (background-image: url("../img/background/intro/kamchatka-tablet.webp")) {
+        background-image: url("../img/background/intro/kamchatka-tablet.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/intro/kamchatka-tablet@2x.jpg");
@@ -48,6 +68,10 @@
 
     @include vp-767 {
       background-image: url("../img/background/intro/kamchatka-mobile.jpg");
+
+      @supports (background-image: url("../img/background/intro/kamchatka-mobile.webp")) {
+        background-image: url("../img/background/intro/kamchatka-mobile.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/intro/kamchatka-mobile@2x.jpg");
@@ -58,12 +82,20 @@
   &--altai {
     background-image: url("../img/background/intro/altai.jpg");
 
+    @supports (background-image: url("../img/background/intro/altai.webp")) {
+      background-image: url("../img/background/intro/altai.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro/altai@2x.jpg");
     }
 
     @include vp-1199 {
       background-image: url("../img/background/intro/altai-tablet.jpg");
+
+      @supports (background-image: url("../img/background/intro/altai-tablet.webp")) {
+        background-image: url("../img/background/intro/altai-tablet.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/intro/altai-tablet@2x.jpg");
@@ -72,6 +104,10 @@
 
     @include vp-767 {
       background-image: url("../img/background/intro/altai-mobile.jpg");
+
+      @supports (background-image: url("../img/background/intro/altai-mobile.webp")) {
+        background-image: url("../img/background/intro/altai-mobile.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/intro/altai-mobile@2x.jpg");
