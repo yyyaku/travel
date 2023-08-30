@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 693px 1fr;
   gap: 22px;
-  margin: 0 0 50px;
+  margin: 0 0 47px;
 
   @include vp-1199 {
     grid-template-columns: 395px 1fr;
