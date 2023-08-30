@@ -1,25 +1,25 @@
 const map = () => {
-  const map = L.map('map').setView([59.9684, 30.3176], 17);
+  const map = L.map('map').setView([55.8235, 37.6232], 13);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
 
   const iconOptions = {
     iconUrl: 'img/svg/map-cursor.svg',
-    iconSize: [38, 50],
-  }
+    iconSize: [32, 44],
+  };
 
   const customIcon = L.icon(iconOptions);
 
   let markerOptions = {
-    icon: customIcon
-  }
+    icon: customIcon,
+  };
 
-  const marker = L.marker({ lat: 59.9684, lng: 30.3176 }, markerOptions);
+  const marker = L.marker({ lat: 55.8166, lng: 37.6369 }, markerOptions);
 
   marker.addTo(map);
-}
+};
 
 export {map};

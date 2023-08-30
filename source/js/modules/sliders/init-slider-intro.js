@@ -9,6 +9,8 @@ const initSliderIntro = () => {
       loop: true,
 
       slidesPerView: 1,
+      spaceBetween: 40,
+      fadeSpeed: 300,
 
       pagination: {
         el: '.swiper-pagination',

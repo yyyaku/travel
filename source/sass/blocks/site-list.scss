@@ -3,10 +3,32 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 0 31px;
+  gap: 20px;
   margin: 0;
   padding: 0;
+  max-width: 650px;
   list-style-type: none;
+}
+
+// навигация при нажатии бургера
+.main-nav--opened .site-list {
+  @include vp-1199 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px 0;
+    padding: 124px 45px 70px;
+    max-width: 100%;
+    width: 100%;
+    background-color: $color-default-white;
+  }
+
+  @include vp-767 {
+    padding: 100px 15px 50px;
+  }
 }
 
 .site-list__link {

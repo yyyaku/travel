@@ -1,7 +1,24 @@
+.instructors {
+  margin: 0 0 50px;
+
+  @include vp-1199 {
+    margin: 0 0 42px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 38px;
+  }
+}
+
 .instructors__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 35px;
+
+  @include vp-1199 {
+    margin: 0 0 24px;
+  }
 }
 
 .instructors__header h3 {

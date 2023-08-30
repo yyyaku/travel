@@ -5,22 +5,29 @@
 .intro-main__text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 150px;
   text-align: start;
 
   @include vp-1199 {
     align-items: center;
     text-align: center;
+    margin: 0 0 50px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 10px;
   }
 }
 
 .intro-main__text h2 {
-  margin: 0 0 25px;
+  margin: 0 0 22px;
   font-size: 77px;
   font-weight: 800;
   line-height: 77px;
 
   @include vp-1199 {
-    margin: 0 0 15px;
+    margin: 0 0 12px;
     font-size: 56px;
     line-height: 56px;
   }
@@ -28,16 +35,17 @@
   @include vp-767 {
     font-size: 30px;
     line-height: 30px;
+    margin: 0 0 15px;
   }
 }
 
 .intro-main__text p {
-  margin: 0 0 35px;
+  margin: 0 0 38px;
   max-width: 464px;
   font-size: 17px;
 
   @include vp-1199 {
-    margin: 0 0 25px;
+    margin: 0 0 27px;
   }
 
   @include vp-767 {
@@ -47,8 +55,22 @@
   }
 }
 
+.intro-main__text a {
+  min-width: 220px;
+
+  @include vp-1199 {
+    min-width: 206px;
+  }
+
+  @include vp-767 {
+    padding: 17px;
+    min-width: 180px;
+  }
+}
+
 .intro-main__details {
   display: flex;
+  flex-wrap: wrap;
   gap: 0 10px;
   margin: 0;
   padding: 0;
@@ -63,10 +85,15 @@
   display: flex;
   align-items: center;
   gap: 0 8px;
-  padding: 14px 20px;
+  padding: 12px 19px;
   border: 1px solid $color-white-opacity50;
 }
 
 .intro-main__details-item svg {
   fill: $color-default-white;
+}
+
+.intro-main__details-item span {
+  font-size: 12px;
+  line-height: 16px;
 }

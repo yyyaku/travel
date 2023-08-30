@@ -1,9 +1,6 @@
 .main-nav {
-  position: relative;
-
   @include vp-1199 {
     order: -1;
-    flex-basis: 33%;
   }
 }
 // контейнер кнопки
@@ -12,7 +9,7 @@
 
   @include vp-1199 {
     position: absolute;
-    bottom: 100%;
+    top: 27px;
     transform: translateY(50%);
     z-index: 2;
     display: block;
@@ -22,6 +19,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  @include vp-767 {
+    top: 2px;
   }
 }
 // бурегер
@@ -48,7 +49,6 @@
 // крестик
 .main-nav--opened .main-nav__toggle {
   left: 0;
-  left: auto;
 
   &::before,
   &::after {
@@ -70,32 +70,19 @@
   }
 }
 
-// навигация при нажатии бургера
-.main-nav--opened .site-list {
-  @include vp-1199 {
-    position: absolute;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 26px 0;
-    width: 100%;
-  }
+.main-nav--nojs {
+  z-index: 3;
 }
 
-// .main-nav--nojs {
-//   z-index: 3;
-// }
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
 
-// .main-nav--nojs .main-nav__toggle {
-//   display: none;
-// }
+.main-nav--nojs .site-list {
+  position: static;
+  min-height: 0;
+}
 
-// .main-nav--nojs .site-list {
-//   position: static;
-//   min-height: 0;
-// }
-
-// .main-nav--nojs .site-list__item {
-//   display: block;
-// }
+.main-nav--nojs .site-list__item {
+  display: block;
+}
