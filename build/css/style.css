@@ -4561,7 +4561,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .advantages__wrapper {
-    padding: 29px 0 38px;
+    padding: 29px 0 18px;
   }
 }
 
@@ -4778,6 +4778,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .gallery__header {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 0 0 14px;
   }
 }
 
@@ -4969,7 +4971,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .form__wrapper {
-    padding: 181px 15px 175px;
+    padding: 180px 15px 175px;
   }
 }
 
@@ -4979,6 +4981,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .form__text {
     margin: 0 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .form__text {
+    margin: 0 0 26px;
   }
 }
 
@@ -4997,6 +5004,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .form__text h2 {
+    margin: 0 0 14px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -5032,6 +5040,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 0 15px;
   }
 }
+@media (max-width: 767px) {
+  .form__wrapper form {
+    gap: 9px 0;
+    padding: 0;
+  }
+}
 
 .form__control button {
   display: -webkit-box;
@@ -5046,6 +5060,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .form__control button {
     padding: 21px 0;
+  }
+}
+@media (max-width: 767px) {
+  .form__control button {
+    padding: 17px 0;
   }
 }
 
@@ -5136,6 +5155,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
     gap: 40px;
   }
 }
+@media (max-width: 767px) {
+  .contacts__wrapper {
+    padding: 67px 0 30px;
+    gap: 30px;
+  }
+}
 
 .contacts__content h3 {
   position: relative;
@@ -5154,6 +5179,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .contacts__content h3 {
+    margin: 0 0 11px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -5191,6 +5217,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .contacts__content p {
+    margin: 0 0 30px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -5226,6 +5253,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -5241,6 +5269,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     -ms-grid-columns: 24px 1fr;
     grid-template-columns: 24px 1fr;
     gap: 6px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__item {
+    gap: 8px;
   }
 }
 
@@ -5261,6 +5294,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__item svg {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -5300,6 +5339,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .contacts__item p {
+    max-width: 160px;
     line-height: 20px;
   }
 }
@@ -5392,7 +5432,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .footer__wrapper {
-    padding: 0 5px;
+    padding: 30px 0 0;
   }
 }
 
@@ -5457,13 +5497,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 767px) {
   .footer-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 13px;
+    margin: 0 0 26px;
   }
 }
 
@@ -5476,13 +5515,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .footer-header__logo svg {
   margin: 6px 0 -5px;
-  width: 118px;
-  height: 34px;
+}
+@media (max-width: 767px) {
+  .footer-header__logo svg {
+    margin: 0 0 -5px;
+    width: 118px;
+    height: 34px;
+  }
 }
 
 @media (max-width: 767px) {
   .footer-header__nav {
-    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -5514,7 +5559,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 0;
+    gap: 5px 50px;
+    margin: 0;
+    width: 100%;
   }
 }
 
