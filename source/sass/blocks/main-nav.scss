@@ -49,7 +49,6 @@
 // крестик
 .main-nav--opened .main-nav__toggle {
   left: 0;
-  left: auto;
 
   &::before,
   &::after {
@@ -71,19 +70,19 @@
   }
 }
 
-// .main-nav--nojs {
-//   z-index: 3;
-// }
+.main-nav--nojs {
+  z-index: 3;
+}
 
-// .main-nav--nojs .main-nav__toggle {
-//   display: none;
-// }
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
 
-// .main-nav--nojs .site-list {
-//   position: static;
-//   min-height: 0;
-// }
+.main-nav--nojs .site-list {
+  position: static;
+  min-height: 0;
+}
 
-// .main-nav--nojs .site-list__item {
-//   display: block;
-// }
+.main-nav--nojs .site-list__item {
+  display: block;
+}
