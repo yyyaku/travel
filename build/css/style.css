@@ -5079,6 +5079,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -ms-grid-columns: 1fr 585px;
   grid-template-columns: 1fr 585px;
   gap: 0 132px;
+  padding: 60px 0 104px;
 }
 @media (max-width: 1199px) {
   .contacts__wrapper {

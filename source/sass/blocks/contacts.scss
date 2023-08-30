@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 585px;
   gap: 0 132px;
+  padding: 60px 0 104px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
