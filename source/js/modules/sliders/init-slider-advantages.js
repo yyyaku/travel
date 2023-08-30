@@ -15,6 +15,8 @@ const initSliderAdvantages = () => {
           prevEl: buttonPrev,
         },
 
+        loop: true,
+
         slidesPerView: 3.6,
         centeredSlides: true,
         spaceBetween: 30,
