@@ -4534,7 +4534,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .advantages__wrapper {
-  padding: 137px 0;
+  padding: 137px 0 129px;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
@@ -4746,6 +4746,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   display: grid;
   -ms-grid-columns: 693px 1fr;
   grid-template-columns: 693px 1fr;
+  gap: 22px;
+  margin: 0 0 50px;
 }
 @media (max-width: 1199px) {
   .gallery__header {
