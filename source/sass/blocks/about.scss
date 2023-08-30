@@ -1,8 +1,7 @@
 .about {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 0 120px 0 0;
   width: 100%;
-  max-width: 1440px;
 
   @include vp-1199 {
     padding: 0 45px 0 0;
@@ -14,6 +13,7 @@
 }
 
 .about__wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 95px 0 40px;
@@ -28,18 +28,26 @@
   }
 }
 
-.about__image {
-  background-color: $color-brown;
-}
-
 .about__image img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 808px;
+  height: 474px;
   object-fit: cover;
+  z-index: 1;
+
+  @include vp-1199 {
+    top: 95px;
+    left: -200px;
+    width: 685px;
+    height: 402px;
+  }
 }
 
 .about__content {
   padding: 35px 0 66px 75px;
+  z-index: 2;
 
   @include vp-1199 {
     padding: 0 0 0 38px;
