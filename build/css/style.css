@@ -2376,6 +2376,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .intro--caucasus {
   background-image: url("../img/background/intro/caucasus.jpg");
 }
+@supports (background-image: url("../img/background/intro/caucasus.webp")) {
+  .intro--caucasus {
+    background-image: url("../img/background/intro/caucasus.webp");
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .intro--caucasus {
     background-image: url("../img/background/intro/caucasus@2x.jpg");
@@ -2384,6 +2389,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .intro--caucasus {
     background-image: url("../img/background/intro/caucasus-tablet.jpg");
+  }
+  @supports (background-image: url("../img/background/intro/caucasus-tablet.webp")) {
+    .intro--caucasus {
+      background-image: url("../img/background/intro/caucasus-tablet.webp");
+    }
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -2395,6 +2405,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .intro--caucasus {
     background-image: url("../img/background/intro/caucasus-mobile.jpg");
   }
+  @supports (background-image: url("../img/background/intro/caucasus-mobile.webp")) {
+    .intro--caucasus {
+      background-image: url("../img/background/intro/caucasus-mobile.webp");
+    }
+  }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .intro--caucasus {
@@ -2404,6 +2419,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .intro--kamchatka {
   background-image: url("../img/background/intro/kamchatka.jpg");
 }
+@supports (background-image: url("../img/background/intro/kamchatka.webp")) {
+  .intro--kamchatka {
+    background-image: url("../img/background/intro/kamchatka.webp");
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .intro--kamchatka {
     background-image: url("../img/background/intro/kamchatka@2x.jpg");
@@ -2412,6 +2432,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 1199px) {
   .intro--kamchatka {
     background-image: url("../img/background/intro/kamchatka-tablet.jpg");
+  }
+  @supports (background-image: url("../img/background/intro/kamchatka-tablet.webp")) {
+    .intro--kamchatka {
+      background-image: url("../img/background/intro/kamchatka-tablet.webp");
+    }
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -2423,6 +2448,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .intro--kamchatka {
     background-image: url("../img/background/intro/kamchatka-mobile.jpg");
   }
+  @supports (background-image: url("../img/background/intro/kamchatka-mobile.webp")) {
+    .intro--kamchatka {
+      background-image: url("../img/background/intro/kamchatka-mobile.webp");
+    }
+  }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .intro--kamchatka {
@@ -2431,6 +2461,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 .intro--altai {
   background-image: url("../img/background/intro/altai.jpg");
+}
+@supports (background-image: url("../img/background/intro/altai.webp")) {
+  .intro--altai {
+    background-image: url("../img/background/intro/altai.webp");
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .intro--altai {
@@ -2441,6 +2476,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .intro--altai {
     background-image: url("../img/background/intro/altai-tablet.jpg");
   }
+  @supports (background-image: url("../img/background/intro/altai-tablet.webp")) {
+    .intro--altai {
+      background-image: url("../img/background/intro/altai-tablet.webp");
+    }
+  }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .intro--altai {
@@ -2450,6 +2490,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 @media (max-width: 767px) {
   .intro--altai {
     background-image: url("../img/background/intro/altai-mobile.jpg");
+  }
+  @supports (background-image: url("../img/background/intro/altai-mobile.webp")) {
+    .intro--altai {
+      background-image: url("../img/background/intro/altai-mobile.webp");
+    }
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
@@ -5383,6 +5428,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background-image: url("../img/background/map/map.webp");
   }
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .contacts__map {
+    background-image: url("../img/background/map/map@2x.png");
+  }
+}
 @media (max-width: 1199px) {
   .contacts__map {
     margin: 0;
@@ -5395,6 +5445,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     }
   }
 }
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .contacts__map {
+    background-image: url("../img/background/map/map-tablet@2x.png");
+  }
+}
 @media (max-width: 767px) {
   .contacts__map {
     min-height: 320px;
@@ -5404,6 +5459,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     .contacts__map {
       background-image: url("../img/background/map/map-mobile.webp");
     }
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .contacts__map {
+    background-image: url("../img/background/map/map-mobile@2x.png");
   }
 }
 
