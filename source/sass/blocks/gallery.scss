@@ -1,14 +1,9 @@
-.gallery {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-}
-
 .gallery__header {
   display: grid;
   grid-template-columns: 693px 1fr;
   gap: 22px;
-  margin: 0 0 47px;
+  margin: 0 auto 47px;
+  max-width: 1440px;
 
   @include vp-1199 {
     grid-template-columns: 395px 1fr;

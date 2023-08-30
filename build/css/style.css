@@ -4111,10 +4111,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .about {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 0 120px 0 0;
   width: 100%;
-  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .about {
@@ -4128,6 +4127,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .about__wrapper {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -4147,19 +4147,28 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
-.about__image {
-  background-color: #964b00;
-}
-
 .about__image img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 808px;
+  height: 474px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .about__image img {
+    top: 95px;
+    left: -200px;
+    width: 685px;
+    height: 402px;
+  }
 }
 
 .about__content {
   padding: 35px 0 66px 75px;
+  z-index: 2;
 }
 @media (max-width: 1199px) {
   .about__content {
@@ -4267,10 +4276,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .reviews__wrapper {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding: 0 0 0 120px;
   width: 100%;
-  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .reviews__wrapper {
@@ -4358,9 +4366,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .reviews-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 258px 1fr;
+  grid-template-columns: 258px 1fr;
   gap: 0 30px;
   padding: 20px 40px 20px 20px;
   -webkit-box-shadow: 0 0 30px rgba(28, 51, 116, 0.1);
@@ -4409,18 +4418,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 0 10px;
-  max-width: 442px;
 }
 @media (max-width: 1199px) {
   .reviews-card__info {
     padding: 2px 0 0;
-    max-width: 294px;
   }
 }
 @media (max-width: 767px) {
   .reviews-card__info {
     gap: 15px 0;
-    max-width: 100%;
   }
 }
 
@@ -4466,7 +4472,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .advantages {
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .advantages {
@@ -4681,19 +4686,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
-.gallery {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-}
-
 .gallery__header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 693px 1fr;
   grid-template-columns: 693px 1fr;
   gap: 22px;
-  margin: 0 0 47px;
+  margin: 0 auto 47px;
+  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .gallery__header {
