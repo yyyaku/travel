@@ -17,6 +17,8 @@
 
   @include vp-767 {
     &::before {
+      content: "";
+      position: absolute;
       top: 90px;
       right: -50px;
       width: 346px;
