@@ -26,7 +26,7 @@
 
 .intro-photo__primary {
   position: absolute;
-  bottom: 0;
+  top: 112px;
   right: 0;
 
   @include vp-1199 {
@@ -37,7 +37,7 @@
 
 .intro-photo__secondary {
   position: absolute;
-  top: 0;
+  top: 19px;
   left: 0;
   z-index: -1;
 

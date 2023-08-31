@@ -83,6 +83,7 @@
 }
 
 .tour-card__link h3 {
+  position: relative;
   margin: 0 0 37px;
   font-size: 24px;
   font-weight: 700;
@@ -95,6 +96,16 @@
 
   @include vp-767 {
     margin: 0 0 30px;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: $color-default-white;
+    content: "";
   }
 }
 
