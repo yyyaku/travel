@@ -3344,6 +3344,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background-image: -webkit-image-set(url("../img/background/tours/clouds-big@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds-big.webp") type("image/webp") 1x, url("../img/background/tours/clouds-big@2x.png") 2x, url("../img/background/tours/clouds-big.png") 1x);
   background-image: image-set(url("../img/background/tours/clouds-big@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds-big.webp") type("image/webp") 1x, url("../img/background/tours/clouds-big@2x.png") 2x, url("../img/background/tours/clouds-big.png") 1x);
 }
+.tours::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 837px;
+  height: 279px;
+  background-size: 837px 279px;
+  background-image: -webkit-image-set(url("../img/background/tours/clouds@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds.webp") type("image/webp") 1x, url("../img/background/tours/clouds@2x.png") 2x, url("../img/background/tours/clouds.png") 1x);
+  background-image: image-set(url("../img/background/tours/clouds@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds.webp") type("image/webp") 1x, url("../img/background/tours/clouds@2x.png") 2x, url("../img/background/tours/clouds.png") 1x);
+}
+@media (max-width: 1199px) {
+  .tours::after {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .tours::before {
     content: "";
@@ -3888,7 +3904,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 0 30px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .instructors__wrapper {
     padding: 0;
   }
@@ -4203,9 +4219,23 @@ svg.leaflet-image-layer.leaflet-interactive path {
   padding: 0 120px 0 0;
   width: 100%;
 }
+.about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 840px;
+  height: 280px;
+  background-size: 840px 280px;
+  background-image: -webkit-image-set(url("../img/background/about/clouds@2x.webp") type("image/webp") 2x, url("../img/background/about/clouds.webp") type("image/webp") 1x, url("../img/background/about/clouds@2x.png") 2x, url("../img/background/about/clouds.png") 1x);
+  background-image: image-set(url("../img/background/about/clouds@2x.webp") type("image/webp") 2x, url("../img/background/about/clouds.webp") type("image/webp") 1x, url("../img/background/about/clouds@2x.png") 2x, url("../img/background/about/clouds.png") 1x);
+}
 @media (max-width: 1199px) {
   .about {
     padding: 0 45px 0 0;
+  }
+  .about::after {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -4561,12 +4591,41 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .advantages {
+  position: relative;
   margin: 0 auto;
   width: 100%;
+}
+.advantages::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 788px;
+  height: 263px;
+  background-size: 788px 263px;
+  background-image: -webkit-image-set(url("../img/background/advantages/clouds-right@2x.webp") type("image/webp") 2x, url("../img/background/advantages/clouds-right.webp") type("image/webp") 1x, url("../img/background/advantages/clouds-right@2x.png") 2x, url("../img/background/advantages/clouds-right.png") 1x);
+  background-image: image-set(url("../img/background/advantages/clouds-right@2x.webp") type("image/webp") 2x, url("../img/background/advantages/clouds-right.webp") type("image/webp") 1x, url("../img/background/advantages/clouds-right@2x.png") 2x, url("../img/background/advantages/clouds-right.png") 1x);
+}
+.advantages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1170px;
+  height: 391px;
+  background-size: 1170px 391px;
+  background-image: -webkit-image-set(url("../img/background/advantages/clouds-left@2x.webp") type("image/webp") 2x, url("../img/background/advantages/clouds-left.webp") type("image/webp") 1x, url("../img/background/advantages/clouds-left@2x.png") 2x, url("../img/background/advantages/clouds-left.png") 1x);
+  background-image: image-set(url("../img/background/advantages/clouds-left@2x.webp") type("image/webp") 2x, url("../img/background/advantages/clouds-left.webp") type("image/webp") 1x, url("../img/background/advantages/clouds-left@2x.png") 2x, url("../img/background/advantages/clouds-left.png") 1x);
 }
 @media (max-width: 1199px) {
   .advantages {
     padding: 0 45px;
+  }
+  .advantages::after {
+    display: none;
+  }
+  .advantages::before {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -4902,7 +4961,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .gallery-card__image {
-  background-color: #002137;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .gallery-card__image--secondory {
