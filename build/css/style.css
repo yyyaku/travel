@@ -2441,7 +2441,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .intro__swiper {
-    padding: 0 0 60px;
+    padding: 0 0 64px;
   }
 }
 @media (max-width: 767px) {
@@ -3133,6 +3133,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .intro-photo__primary {
+    top: 38px;
     width: 236px;
     height: 312px;
   }
@@ -3146,6 +3147,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 @media (max-width: 1199px) {
   .intro-photo__secondary {
+    top: -15px;
     width: 266px;
     height: 351px;
   }
