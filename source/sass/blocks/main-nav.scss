@@ -48,8 +48,6 @@
 
 // крестик
 .main-nav--opened .main-nav__toggle {
-  left: 0;
-
   &::before,
   &::after {
     content: "";
@@ -67,6 +65,10 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  @include vp-1199 {
+    transform: translate(10%, 50%);
   }
 }
 
