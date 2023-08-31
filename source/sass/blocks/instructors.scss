@@ -1,21 +1,7 @@
-.instructors {
-  @include vp-1199 {
-    margin: 0 0 42px;
-  }
-
-  @include vp-767 {
-    margin: 0 0 38px;
-  }
-}
-
 .instructors__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @include vp-1199 {
-    margin: 0 0 24px;
-  }
 }
 
 .instructors__header h3 {
@@ -37,13 +23,29 @@
 
 .instructors__wrapper {
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 105px;
   width: 100%;
   max-width: 1440px;
+
+  @include vp-1199 {
+    padding: 0 30px;
+  }
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .instructors__swiper {
-  padding: 35px 20px 50px;
+  padding: 35px 15px 50px;
+
+  @include vp-1199 {
+    padding: 24px 15px 42px;
+  }
+
+  @include vp-767 {
+    padding: 24px 15px 38px;
+  }
 }
 
 .instructors__list {

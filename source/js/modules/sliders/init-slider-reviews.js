@@ -27,7 +27,7 @@ const initSliderReviews = () => {
 
         320: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 30,
           allowTouchMove: true,
         },
       },
