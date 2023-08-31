@@ -29,7 +29,7 @@
 
 .form__wrapper {
   margin: 0 auto;
-  padding: 308px 231px 307px;
+  padding: 308px 231px 282px;
   width: 100%;
   max-width: 1440px;
 
@@ -90,6 +90,7 @@
   display: grid;
   grid-template-columns: 1fr 238px;
   gap: 0 30px;
+  min-height: 89px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
@@ -106,7 +107,7 @@
 .form__control button {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
+  padding: 23px 0;
   width: 100%;
 
   @include vp-1199 {

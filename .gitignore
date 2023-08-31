@@ -10,4 +10,7 @@ node_modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
+source/**/*leaflet
+source/**/*leaflet.scss
+build/**/*leaflet.scss
 Thumbs.db

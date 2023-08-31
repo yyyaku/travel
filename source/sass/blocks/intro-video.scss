@@ -1,7 +1,8 @@
 .intro-video {
   position: absolute;
-  top: 120px;
+  top: 118px;
   right: 0;
+  z-index: 1;
 
   @include vp-1199 {
     position: static;

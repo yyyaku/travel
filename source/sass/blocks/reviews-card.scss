@@ -6,12 +6,13 @@
   box-shadow: 0 0 30px $color-midnight-blue-opacity10;
 
   @include vp-1199 {
+    grid-template-columns: 186px 1fr;
     padding: 20px 30px 20px 20px;
   }
 
   @include vp-767 {
-    flex-direction: column;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    padding: 20px 20px 18px;
   }
 }
 
@@ -19,7 +20,7 @@
   background-color: $color-dark-blue;
 
   @include vp-767 {
-    margin: 0 0 16px;
+    margin: 0 0 17px;
   }
 }
 

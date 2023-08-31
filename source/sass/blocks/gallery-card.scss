@@ -8,7 +8,7 @@
 }
 
 .gallery-card__image {
-  background-color: $color-dark-blue;
+  flex-grow: 1;
 }
 
 .gallery-card__image--secondory {
@@ -31,5 +31,4 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 294px;
 }
