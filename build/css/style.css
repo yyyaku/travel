@@ -3725,7 +3725,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
-.education__wrapper h2 {
+.education__header h2 {
   position: relative;
   margin: 0 0 35px;
   color: #2d383f;
@@ -3734,20 +3734,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
   line-height: 35px;
 }
 @media (max-width: 1199px) {
-  .education__wrapper h2 {
+  .education__header h2 {
     margin: 0 0 20px;
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .education__wrapper h2 {
+  .education__header h2 {
     margin: 0 0 16px;
     font-size: 22px;
     line-height: 22px;
   }
 }
-.education__wrapper h2::before {
+.education__header h2::before {
   position: absolute;
   content: "Обучение";
   min-width: 1200px;
@@ -3757,41 +3757,38 @@ svg.leaflet-image-layer.leaflet-interactive path {
   line-height: 55px;
 }
 @media (max-width: 1199px) {
-  .education__wrapper h2::before {
+  .education__header h2::before {
     min-width: 678px;
     font-size: 40px;
     line-height: 40px;
   }
 }
 @media (max-width: 767px) {
-  .education__wrapper h2::before {
+  .education__header h2::before {
     min-width: 290px;
     font-size: 26px;
     line-height: 26px;
   }
 }
 
-.education__wrapper p {
+.education__header p {
   margin: 0 0 49px;
   max-width: 820px;
 }
 @media (max-width: 1199px) {
-  .education__wrapper p {
+  .education__header p {
     margin: 0 0 57px;
     max-width: 560px;
   }
 }
 @media (max-width: 767px) {
-  .education__wrapper p {
+  .education__header p {
     margin: 0 0 39px;
     font-size: 14px;
     line-height: 20px;
   }
 }
 
-.instructors {
-  margin: 0 0 50px;
-}
 @media (max-width: 1199px) {
   .instructors {
     margin: 0 0 42px;
@@ -3813,7 +3810,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 35px;
 }
 @media (max-width: 1199px) {
   .instructors__header {
@@ -3838,6 +3834,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.instructors__wrapper {
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.instructors__swiper {
+  padding: 35px 20px 50px;
 }
 
 .instructors__list {

@@ -517,23 +517,25 @@
         </div>
       </section>
       <section class="education">
-        <div class="container">
-          <div class="education__wrapper">
+        <div class="education__wrapper">
+          <div class="education__header container">
             <h2>Обучение</h2>
             <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
               Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-            <div class="instructors">
-              <div class="instructors__header">
-                <h3>Наши инструкторы</h3>
-                <div class="swiper-buttons">
-                  <button class="swiper-buttons__button instructors__button--prev" type="button" aria-label="Назад.">
-                    <span class="swiper-buttons__arrow swiper-buttons__arrow--prev"></span>
-                  </button>
-                  <button class="swiper-buttons__button instructors__button--next" type="button" aria-label="Вперед.">
-                    <span class="swiper-buttons__arrow swiper-buttons__arrow--next"></span>
-                  </button>
-                </div>
+          </div>
+          <div class="instructors">
+            <div class="instructors__header container">
+              <h3>Наши инструкторы</h3>
+              <div class="swiper-buttons">
+                <button class="swiper-buttons__button instructors__button--prev" type="button" aria-label="Назад.">
+                  <span class="swiper-buttons__arrow swiper-buttons__arrow--prev"></span>
+                </button>
+                <button class="swiper-buttons__button instructors__button--next" type="button" aria-label="Вперед.">
+                  <span class="swiper-buttons__arrow swiper-buttons__arrow--next"></span>
+                </button>
               </div>
+            </div>
+            <div class="instructors__wrapper">
               <div class="instructors__swiper swiper">
                 <ul class="instructors__list swiper-wrapper">
                   <li class="instructor-card swiper-slide" tabindex="0">
@@ -644,7 +646,8 @@
                           srcset="./img/instructors/fedor-kaygorodov-tablet.jpg 1x, ./img/instructors/fedor-kaygorodov-tablet@2x.jpg 2x">
                         <img src="./img/instructors/fedor-kaygorodov.jpg"
                           srcset="./img/instructors/fedor-kaygorodov@2x.jpg 2x" width="238" height="212"
-                          alt="Мужчина в черной куртке, в оранжевой шапке и с синим рюкзаком стоит на горе." loading="lazy">
+                          alt="Мужчина в черной куртке, в оранжевой шапке и с синим рюкзаком стоит на горе."
+                          loading="lazy">
                       </picture>
                     </div>
                     <div class="instructor-card__info">
@@ -675,7 +678,8 @@
                           srcset="./img/instructors/fedor-kaygorodov-tablet.jpg 1x, ./img/instructors/fedor-kaygorodov-tablet@2x.jpg 2x">
                         <img src="./img/instructors/fedor-kaygorodov.jpg"
                           srcset="./img/instructors/fedor-kaygorodov@2x.jpg 2x" width="238" height="212"
-                          alt="Мужчина в черной куртке, в оранжевой шапке и с синим рюкзаком стоит на горе." loading="lazy">
+                          alt="Мужчина в черной куртке, в оранжевой шапке и с синим рюкзаком стоит на горе."
+                          loading="lazy">
                       </picture>
                     </div>
                     <div class="instructor-card__info">
@@ -693,35 +697,35 @@
                 </ul>
               </div>
             </div>
-            <div class="education-process">
-              <h3>Процесс обучения</h3>
-              <ul class="education-process__list">
-                <li class="education-process__item">
-                  <svg width="25" height="25">
-                    <use href="img/sprite.svg#education-map"></use>
-                  </svg>
-                  <h4>Изучение спортивного туристского движения</h4>
-                </li>
-                <li class="education-process__item">
-                  <svg width="24" height="24">
-                    <use href="img/sprite.svg#education-boots"></use>
-                  </svg>
-                  <h4>Подготовка и техническое снаряжение в походах</h4>
-                </li>
-                <li class="education-process__item">
-                  <svg width="23" height="23">
-                    <use href="img/sprite.svg#education-tree"></use>
-                  </svg>
-                  <h4>Лекции по окружающей среде, экологии и гигиене</h4>
-                </li>
-                <li class="education-process__item">
-                  <svg width="25" height="25">
-                    <use href="img/sprite.svg#education-mountain"></use>
-                  </svg>
-                  <h4>Разъяснение сложности горных препятствий </h4>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div class="education-process container">
+            <h3>Процесс обучения</h3>
+            <ul class="education-process__list">
+              <li class="education-process__item">
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#education-map"></use>
+                </svg>
+                <h4>Изучение спортивного туристского движения</h4>
+              </li>
+              <li class="education-process__item">
+                <svg width="24" height="24">
+                  <use href="img/sprite.svg#education-boots"></use>
+                </svg>
+                <h4>Подготовка и техническое снаряжение в походах</h4>
+              </li>
+              <li class="education-process__item">
+                <svg width="23" height="23">
+                  <use href="img/sprite.svg#education-tree"></use>
+                </svg>
+                <h4>Лекции по окружающей среде, экологии и гигиене</h4>
+              </li>
+              <li class="education-process__item">
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#education-mountain"></use>
+                </svg>
+                <h4>Разъяснение сложности горных препятствий </h4>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1016,7 +1020,8 @@
                 </div>
                 <div class="gallery-card__image gallery-card__image--secondory">
                   <picture>
-                    <source type="image/webp" srcset="./img/gallery/second-1.webp 1x, ./img/gallery/second-1@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/gallery/second-1.webp 1x, ./img/gallery/second-1@2x.webp 2x">
                     <img src="./img/gallery/second-1.jpg" srcset="./img/gallery/second-1@2x.jpg 2x" width="298"
                       height="179" alt="" loading="lazy">
                   </picture>
@@ -1037,7 +1042,8 @@
                 </div>
                 <div class="gallery-card__image gallery-card__image--secondory">
                   <picture>
-                    <source type="image/webp" srcset="./img/gallery/second-2.webp 1x, ./img/gallery/second-2@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/gallery/second-2.webp 1x, ./img/gallery/second-2@2x.webp 2x">
                     <img src="./img/gallery/second-2.jpg" srcset="./img/gallery/second-2@2x.jpg 2x" width="298"
                       height="179" alt="" loading="lazy">
                   </picture>
@@ -1058,7 +1064,8 @@
                 </div>
                 <div class="gallery-card__image gallery-card__image--secondory">
                   <picture>
-                    <source type="image/webp" srcset="./img/gallery/second-2.webp 1x, ./img/gallery/second-2@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/gallery/second-2.webp 1x, ./img/gallery/second-2@2x.webp 2x">
                     <img src="./img/gallery/second-2.jpg" srcset="./img/gallery/second-2@2x.jpg 2x" width="298"
                       height="179" alt="" loading="lazy">
                   </picture>
