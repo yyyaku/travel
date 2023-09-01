@@ -1,3 +1,11 @@
+.swiper-slide-active .intro-main {
+  display: block;
+}
+
+.intro-main {
+  display: none;
+}
+
 .intro-main__text {
   position: relative;
   display: flex;

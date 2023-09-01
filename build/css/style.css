@@ -2840,6 +2840,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 }
 
+.swiper-slide-active .intro-main {
+  display: block;
+}
+
+.intro-main {
+  display: none;
+}
+
 .intro-main__text {
   position: relative;
   display: -webkit-box;
