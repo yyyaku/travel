@@ -2772,6 +2772,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.swiper-slide-active .intro-main {
+  display: block;
+}
+
+.intro-main {
+  display: none;
+}
+
 .intro-main__text {
   position: relative;
   display: -webkit-box;
@@ -3986,18 +3994,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   flex-grow: 1;
 }
 
-.gallery-card__image--secondory {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 5px 0;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.gallery-card__image:first-child {
+  background-color: #1c3374;
 }
 
 .gallery-card img {
@@ -4007,7 +4005,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   object-fit: cover;
 }
 
-.gallery-card--secondory {
+.gallery-card__image-secondory {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4018,6 +4016,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 5px 0;
+}
+
+.gallery-card__image-secondory-wrapper {
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  background-color: #1c3374;
+}
+
+.gallery-card__image-secondory-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .form {
@@ -5644,7 +5656,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     gap: 0 3px;
   }
 
-  .gallery-card__image--secondory {
+  .gallery-card__image-secondory {
     gap: 3px 0;
   }
 
