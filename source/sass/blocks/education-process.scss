@@ -69,7 +69,7 @@
 
   // синяя линия на планшете
   @include vp-1199 {
-    &:nth-child(1) {
+    &:first-child {
       // синяя линия
       &::after {
         content: "";
