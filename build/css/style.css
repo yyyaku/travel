@@ -2449,7 +2449,8 @@ button,
 
 .intro__swiper .swiper-pagination {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
+  gap: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3341,7 +3342,7 @@ button,
 .tours::before {
   content: "";
   position: absolute;
-  top: -15px;
+  top: -20px;
   right: 0;
   width: 602px;
   height: 1364px;
@@ -3380,7 +3381,7 @@ button,
 }
 
 .tours__wrapper {
-  padding: 123px 0;
+  padding: 123px 0 126px;
 }
 @media (max-width: 1199px) {
   .tours__wrapper {
@@ -3436,6 +3437,7 @@ button,
 }
 .tours__header h2::before {
   position: absolute;
+  bottom: 0;
   content: "Ближайшие туры";
   min-width: 1200px;
   color: rgba(45, 56, 63, 0.03);
@@ -3807,7 +3809,7 @@ button,
 
 .education__header h2 {
   position: relative;
-  margin: 0 0 35px;
+  margin: 0 0 32px;
   color: #2d383f;
   font-size: 35px;
   font-weight: 800;
@@ -3829,6 +3831,7 @@ button,
 }
 .education__header h2::before {
   position: absolute;
+  bottom: 0;
   content: "Обучение";
   min-width: 1200px;
   color: rgba(45, 56, 63, 0.03);
@@ -4334,6 +4337,7 @@ button,
 }
 .about__content h2::before {
   position: absolute;
+  bottom: 0;
   content: "О нас";
   color: rgba(45, 56, 63, 0.03);
   font-size: 55px;
@@ -4642,7 +4646,7 @@ button,
 }
 
 .advantages__wrapper {
-  padding: 137px 0 129px;
+  padding: 122px 0 129px;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
@@ -4680,7 +4684,7 @@ button,
 .advantages__wrapper h2::before {
   position: absolute;
   content: "Преимущества";
-  bottom: 50%;
+  bottom: 70%;
   right: 50%;
   -webkit-transform: translate(50%, 50%);
       -ms-transform: translate(50%, 50%);
@@ -4890,6 +4894,7 @@ button,
 }
 .gallery__header h2::before {
   position: absolute;
+  bottom: 0;
   content: "Фотогалерея";
   color: rgba(45, 56, 63, 0.03);
   font-size: 55px;
@@ -4966,6 +4971,7 @@ button,
   .gallery-card {
     -ms-grid-columns: 159px 1fr;
     grid-template-columns: 159px 1fr;
+    gap: 3px;
   }
 }
 
@@ -5021,7 +5027,7 @@ button,
 
 .form__wrapper {
   margin: 0 auto;
-  padding: 308px 231px 282px;
+  padding: 303px 231px 282px;
   width: 100%;
   max-width: 1440px;
 }

@@ -4,7 +4,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -20px;
     right: 0;
     width: 602px;
     height: 1364px;
@@ -53,7 +53,7 @@
 }
 
 .tours__wrapper {
-  padding: 123px 0;
+  padding: 123px 0 126px;
 
   @include vp-1199 {
     padding: 84px 0 87px;
@@ -99,6 +99,7 @@
 
   &::before {
     position: absolute;
+    bottom: 0;
     content: "Ближайшие туры";
     min-width: 1200px;
     color: $color-granite-opacity3;

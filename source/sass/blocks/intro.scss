@@ -97,7 +97,8 @@
 
 .intro__swiper .swiper-pagination {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
+  gap: 5px;
   display: flex;
   justify-content: flex-end;
 
