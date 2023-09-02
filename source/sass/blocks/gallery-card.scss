@@ -1,43 +1,31 @@
 .gallery-card {
-  display: flex;
-  gap: 0 5px;
+  display: grid;
+  grid-template-columns: 275px 1fr;
+  gap: 5px;
 
   @include vp-767 {
-    gap: 0 3px;
+    grid-template-columns: 159px 1fr;
+    gap: 3px;
   }
 }
 
 .gallery-card__image {
-  flex-grow: 1;
+  grid-row: 1/3;
 }
 
-.gallery-card__image:first-child {
-  background-color: $color-midnight-blue;
-}
-
-.gallery-card img {
+.gallery-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.gallery-card__image-secondory {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5px 0;
-
-  @include vp-767 {
-    gap: 3px 0;
-  }
+.gallery-card__image-secondory img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.gallery-card__image-secondory-wrapper {
-  flex-shrink: 1;
-  background-color: $color-midnight-blue;
-}
-
-.gallery-card__image-secondory-wrapper img {
+.gallery-card__image-tertiary img {
   width: 100%;
   height: 100%;
   object-fit: cover;
