@@ -4097,7 +4097,7 @@ button,
   background-color: #0266c1;
 }
 @media (max-width: 1199px) {
-  .education-process__item:nth-child(1)::after {
+  .education-process__item:first-child::after {
     content: "";
     position: absolute;
     bottom: 0;
