@@ -2443,7 +2443,7 @@ button,
 }
 @media (max-width: 767px) {
   .intro__swiper {
-    padding: 0 0 103px;
+    padding: 0 0 123px;
   }
 }
 
@@ -3363,6 +3363,17 @@ button,
   background-image: image-set(url("../img/background/tours/clouds@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds.webp") type("image/webp") 1x, url("../img/background/tours/clouds@2x.png") 2x, url("../img/background/tours/clouds.png") 1x);
 }
 @media (max-width: 1199px) {
+  .tours::before {
+    content: "";
+    position: absolute;
+    top: -95px;
+    right: 0;
+    width: 301px;
+    height: 1364px;
+    background-size: 301px 1364px;
+    background-image: -webkit-image-set(url("../img/background/tours/clouds-big-tablet@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds-big-tablet.webp") type("image/webp") 1x, url("../img/background/tours/clouds-big-tablet@2x.png") 2x, url("../img/background/tours/clouds-big-tablet.png") 1x);
+    background-image: image-set(url("../img/background/tours/clouds-big-tablet@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds-big-tablet.webp") type("image/webp") 1x, url("../img/background/tours/clouds-big-tablet@2x.png") 2x, url("../img/background/tours/clouds-big-tablet.png") 1x);
+  }
   .tours::after {
     display: none;
   }
@@ -3371,7 +3382,7 @@ button,
   .tours::before {
     content: "";
     position: absolute;
-    top: 90px;
+    top: 136px;
     right: 0;
     width: 173px;
     height: 595px;
@@ -3701,7 +3712,7 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 15px 13px;
     margin: 0 0 15px;
   }
 }
@@ -4287,7 +4298,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__image img {
-    top: 80px;
+    top: 78px;
     left: -210px;
     width: 685px;
     height: 402px;
@@ -4652,7 +4663,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__wrapper {
-    padding: 30px 0 15px;
+    padding: 52px 0 15px;
   }
 }
 
@@ -5035,7 +5046,7 @@ button,
 }
 @media (max-width: 767px) {
   .form__wrapper {
-    padding: 180px 15px 175px;
+    padding: 181px 15px 175px;
   }
 }
 
@@ -5474,8 +5485,30 @@ button,
   }
 }
 
+.footer {
+  position: relative;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(45, 56, 63, 0.2);
+}
+
 .footer__wrapper {
   padding: 30px 0;
+}
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    padding: 39px 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding: 25px 0 30px;
+  }
 }
 
 .footer__copyright {
@@ -5500,6 +5533,7 @@ button,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin: 0 0 0 5px;
   }
 }
 .footer__copyright:hover {
@@ -5544,7 +5578,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 13px;
-    margin: 0 0 26px;
+    margin: 0 0 21px;
   }
 }
 
@@ -5570,8 +5604,7 @@ button,
 
 @media (max-width: 767px) {
   .footer-header__nav {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    width: 100%;
   }
 }
 
@@ -5599,13 +5632,20 @@ button,
 }
 @media (max-width: 767px) {
   .footer-header__list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px 50px;
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
     margin: 0;
-    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-header__item {
+    margin: 0 0 5px;
   }
 }
 
@@ -5709,6 +5749,7 @@ button,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin: 0 0 20px 5px;
   }
 }
 
