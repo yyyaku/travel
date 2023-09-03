@@ -2424,7 +2424,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__wrapper {
-    padding: 174px 0 92px;
+    padding: 174px 0 90px;
   }
 }
 @media (max-width: 767px) {
@@ -2438,7 +2438,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__swiper {
-    padding: 0 0 127px;
+    min-height: 760px;
   }
 }
 @media (max-width: 767px) {
@@ -2706,7 +2706,7 @@ button,
 .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -5px;
   width: 28px;
   height: 2px;
   background-color: #2d383f;
@@ -3188,7 +3188,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro-audio__container {
-    margin: 0 auto;
+    margin: 70px auto 0;
   }
 }
 
@@ -4427,7 +4427,7 @@ button,
 
 .reviews__header h2 {
   position: relative;
-  margin: 0;
+  margin: 15px 0 -15px;
   color: #2d383f;
   font-size: 35px;
   font-weight: 800;
