@@ -75,7 +75,7 @@
   padding: 183px 0 82px;
 
   @include vp-1199 {
-    padding: 174px 0 92px;
+    padding: 174px 0 90px;
   }
 
   @include vp-767 {
@@ -87,21 +87,23 @@
   position: relative;
 
   @include vp-1199 {
-    padding: 0 0 64px;
+    min-height: 760px;
   }
 
   @include vp-767 {
-    padding: 0 0 103px;
+    padding: 0 0 123px;
   }
 }
 
 .intro__swiper .swiper-pagination {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
+  gap: 5px;
   display: flex;
   justify-content: flex-end;
 
   @include vp-1199 {
+    bottom: 0;
     justify-content: center;
     gap: 7px;
   }

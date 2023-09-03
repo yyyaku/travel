@@ -2424,7 +2424,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__wrapper {
-    padding: 174px 0 92px;
+    padding: 174px 0 90px;
   }
 }
 @media (max-width: 767px) {
@@ -2438,18 +2438,19 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__swiper {
-    padding: 0 0 64px;
+    min-height: 760px;
   }
 }
 @media (max-width: 767px) {
   .intro__swiper {
-    padding: 0 0 103px;
+    padding: 0 0 123px;
   }
 }
 
 .intro__swiper .swiper-pagination {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
+  gap: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2459,6 +2460,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__swiper .swiper-pagination {
+    bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2704,7 +2706,7 @@ button,
 .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -5px;
   width: 28px;
   height: 2px;
   background-color: #2d383f;
@@ -3186,7 +3188,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro-audio__container {
-    margin: 0 auto;
+    margin: 70px auto 0;
   }
 }
 
@@ -3341,7 +3343,7 @@ button,
 .tours::before {
   content: "";
   position: absolute;
-  top: -15px;
+  top: -20px;
   right: 0;
   width: 602px;
   height: 1364px;
@@ -3361,6 +3363,17 @@ button,
   background-image: image-set(url("../img/background/tours/clouds@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds.webp") type("image/webp") 1x, url("../img/background/tours/clouds@2x.png") 2x, url("../img/background/tours/clouds.png") 1x);
 }
 @media (max-width: 1199px) {
+  .tours::before {
+    content: "";
+    position: absolute;
+    top: -95px;
+    right: 0;
+    width: 301px;
+    height: 1364px;
+    background-size: 301px 1364px;
+    background-image: -webkit-image-set(url("../img/background/tours/clouds-big-tablet@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds-big-tablet.webp") type("image/webp") 1x, url("../img/background/tours/clouds-big-tablet@2x.png") 2x, url("../img/background/tours/clouds-big-tablet.png") 1x);
+    background-image: image-set(url("../img/background/tours/clouds-big-tablet@2x.webp") type("image/webp") 2x, url("../img/background/tours/clouds-big-tablet.webp") type("image/webp") 1x, url("../img/background/tours/clouds-big-tablet@2x.png") 2x, url("../img/background/tours/clouds-big-tablet.png") 1x);
+  }
   .tours::after {
     display: none;
   }
@@ -3369,7 +3382,7 @@ button,
   .tours::before {
     content: "";
     position: absolute;
-    top: 90px;
+    top: 136px;
     right: 0;
     width: 173px;
     height: 595px;
@@ -3380,7 +3393,7 @@ button,
 }
 
 .tours__wrapper {
-  padding: 123px 0;
+  padding: 123px 0 126px;
 }
 @media (max-width: 1199px) {
   .tours__wrapper {
@@ -3436,6 +3449,7 @@ button,
 }
 .tours__header h2::before {
   position: absolute;
+  bottom: 0;
   content: "Ближайшие туры";
   min-width: 1200px;
   color: rgba(45, 56, 63, 0.03);
@@ -3698,7 +3712,7 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 15px 13px;
     margin: 0 0 15px;
   }
 }
@@ -3807,7 +3821,7 @@ button,
 
 .education__header h2 {
   position: relative;
-  margin: 0 0 35px;
+  margin: 0 0 32px;
   color: #2d383f;
   font-size: 35px;
   font-weight: 800;
@@ -3829,6 +3843,7 @@ button,
 }
 .education__header h2::before {
   position: absolute;
+  bottom: 0;
   content: "Обучение";
   min-width: 1200px;
   color: rgba(45, 56, 63, 0.03);
@@ -3857,7 +3872,7 @@ button,
 }
 @media (max-width: 1199px) {
   .education__header p {
-    margin: 0 0 57px;
+    margin: 0 0 59px;
     max-width: 560px;
   }
 }
@@ -3958,7 +3973,7 @@ button,
 
 .instructor-card__image {
   background-color: #002137;
-  margin: 0 0 16px;
+  margin: 0 0 15px;
 }
 
 .instructor-card__image img {
@@ -4283,7 +4298,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__image img {
-    top: 80px;
+    top: 78px;
     left: -210px;
     width: 685px;
     height: 402px;
@@ -4334,6 +4349,7 @@ button,
 }
 .about__content h2::before {
   position: absolute;
+  bottom: 0;
   content: "О нас";
   color: rgba(45, 56, 63, 0.03);
   font-size: 55px;
@@ -4362,11 +4378,6 @@ button,
 .about__item:first-child {
   margin: 0 0 30px;
 }
-@media (max-width: 1199px) {
-  .about__item:first-child {
-    margin: 0 0 27px;
-  }
-}
 @media (max-width: 767px) {
   .about__item:first-child {
     margin: 0 0 42px;
@@ -4381,6 +4392,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__item h3 {
+    margin: 0 0 14px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -4415,7 +4427,7 @@ button,
 
 .reviews__header h2 {
   position: relative;
-  margin: 0;
+  margin: 15px 0 -15px;
   color: #2d383f;
   font-size: 35px;
   font-weight: 800;
@@ -4642,16 +4654,16 @@ button,
 }
 
 .advantages__wrapper {
-  padding: 137px 0 129px;
+  padding: 122px 0 129px;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
-    padding: 88px 0 38px;
+    padding: 73px 0 38px;
   }
 }
 @media (max-width: 767px) {
   .advantages__wrapper {
-    padding: 30px 0 15px;
+    padding: 52px 0 15px;
   }
 }
 
@@ -4680,7 +4692,7 @@ button,
 .advantages__wrapper h2::before {
   position: absolute;
   content: "Преимущества";
-  bottom: 50%;
+  bottom: 70%;
   right: 50%;
   -webkit-transform: translate(50%, 50%);
       -ms-transform: translate(50%, 50%);
@@ -4890,6 +4902,7 @@ button,
 }
 .gallery__header h2::before {
   position: absolute;
+  bottom: 0;
   content: "Фотогалерея";
   color: rgba(45, 56, 63, 0.03);
   font-size: 55px;
@@ -4966,6 +4979,7 @@ button,
   .gallery-card {
     -ms-grid-columns: 159px 1fr;
     grid-template-columns: 159px 1fr;
+    gap: 3px;
   }
 }
 
@@ -5021,18 +5035,18 @@ button,
 
 .form__wrapper {
   margin: 0 auto;
-  padding: 308px 231px 282px;
+  padding: 303px 231px 282px;
   width: 100%;
   max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .form__wrapper {
-    padding: 192px 236px 183px;
+    padding: 187px 236px 177px;
   }
 }
 @media (max-width: 767px) {
   .form__wrapper {
-    padding: 180px 15px 175px;
+    padding: 181px 15px 175px;
   }
 }
 
@@ -5212,7 +5226,7 @@ button,
   .contacts__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 88px 0 70px;
+    padding: 93px 0 70px;
     gap: 40px;
   }
 }
@@ -5273,7 +5287,7 @@ button,
 @media (max-width: 1199px) {
   .contacts__content p {
     max-width: 490px;
-    margin: 0 0 39px;
+    margin: 0 0 40px;
   }
 }
 @media (max-width: 767px) {
@@ -5471,8 +5485,30 @@ button,
   }
 }
 
+.footer {
+  position: relative;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(45, 56, 63, 0.2);
+}
+
 .footer__wrapper {
   padding: 30px 0;
+}
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    padding: 39px 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding: 25px 0 30px;
+  }
 }
 
 .footer__copyright {
@@ -5497,6 +5533,7 @@ button,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin: 0 0 0 5px;
   }
 }
 .footer__copyright:hover {
@@ -5541,7 +5578,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 13px;
-    margin: 0 0 26px;
+    margin: 0 0 21px;
   }
 }
 
@@ -5567,8 +5604,7 @@ button,
 
 @media (max-width: 767px) {
   .footer-header__nav {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    width: 100%;
   }
 }
 
@@ -5596,13 +5632,20 @@ button,
 }
 @media (max-width: 767px) {
   .footer-header__list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px 50px;
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
     margin: 0;
-    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-header__item {
+    margin: 0 0 5px;
   }
 }
 
@@ -5706,6 +5749,7 @@ button,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin: 0 0 20px 5px;
   }
 }
 

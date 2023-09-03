@@ -37,6 +37,7 @@
 
   &::before {
     position: absolute;
+    bottom: 0;
     content: "Фотогалерея";
     color: $color-granite-opacity3;
     font-size: 55px;

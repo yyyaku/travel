@@ -29,16 +29,16 @@
 
 .form__wrapper {
   margin: 0 auto;
-  padding: 308px 231px 282px;
+  padding: 303px 231px 282px;
   width: 100%;
   max-width: 1440px;
 
   @include vp-1199 {
-    padding: 192px 236px 183px;
+    padding: 187px 236px 177px;
   }
 
   @include vp-767 {
-    padding: 180px 15px 175px;
+    padding: 181px 15px 175px;
   }
 }
 
