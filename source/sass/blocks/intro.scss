@@ -87,7 +87,7 @@
   position: relative;
 
   @include vp-1199 {
-    padding: 0 0 64px;
+    padding: 0 0 127px;
   }
 
   @include vp-767 {
@@ -103,6 +103,7 @@
   justify-content: flex-end;
 
   @include vp-1199 {
+    bottom: 0;
     justify-content: center;
     gap: 7px;
   }

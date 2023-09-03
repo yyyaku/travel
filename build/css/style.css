@@ -2438,7 +2438,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__swiper {
-    padding: 0 0 64px;
+    padding: 0 0 127px;
   }
 }
 @media (max-width: 767px) {
@@ -2460,6 +2460,7 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__swiper .swiper-pagination {
+    bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3860,7 +3861,7 @@ button,
 }
 @media (max-width: 1199px) {
   .education__header p {
-    margin: 0 0 57px;
+    margin: 0 0 59px;
     max-width: 560px;
   }
 }
@@ -3961,7 +3962,7 @@ button,
 
 .instructor-card__image {
   background-color: #002137;
-  margin: 0 0 16px;
+  margin: 0 0 15px;
 }
 
 .instructor-card__image img {
@@ -4366,11 +4367,6 @@ button,
 .about__item:first-child {
   margin: 0 0 30px;
 }
-@media (max-width: 1199px) {
-  .about__item:first-child {
-    margin: 0 0 27px;
-  }
-}
 @media (max-width: 767px) {
   .about__item:first-child {
     margin: 0 0 42px;
@@ -4385,6 +4381,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__item h3 {
+    margin: 0 0 14px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -4650,7 +4647,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
-    padding: 88px 0 38px;
+    padding: 73px 0 38px;
   }
 }
 @media (max-width: 767px) {
@@ -5033,7 +5030,7 @@ button,
 }
 @media (max-width: 1199px) {
   .form__wrapper {
-    padding: 192px 236px 183px;
+    padding: 187px 236px 177px;
   }
 }
 @media (max-width: 767px) {
@@ -5218,7 +5215,7 @@ button,
   .contacts__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 88px 0 70px;
+    padding: 93px 0 70px;
     gap: 40px;
   }
 }
@@ -5279,7 +5276,7 @@ button,
 @media (max-width: 1199px) {
   .contacts__content p {
     max-width: 490px;
-    margin: 0 0 39px;
+    margin: 0 0 40px;
   }
 }
 @media (max-width: 767px) {
