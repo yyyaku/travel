@@ -2305,21 +2305,25 @@ button,
 }
 
 .swiper-buttons__arrow {
+  position: absolute;
+  top: 14.5px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   cursor: pointer;
   border-top: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
 }
 .swiper-buttons__arrow--prev {
+  left: 11px;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
 .swiper-buttons__arrow--next {
+  right: 11px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -2420,15 +2424,19 @@ button,
 }
 
 .intro__wrapper {
+  background: linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+}
+
+.intro__container {
   padding: 183px 0 82px;
 }
 @media (max-width: 1199px) {
-  .intro__wrapper {
+  .intro__container {
     padding: 174px 0 90px;
   }
 }
 @media (max-width: 767px) {
-  .intro__wrapper {
+  .intro__container {
     padding: 139px 0 40px;
   }
 }
@@ -3820,7 +3828,7 @@ button,
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #0266c1;
+  background-color: rgba(2, 102, 193, 0.2);
 }
 @media (max-width: 1199px) {
   .education::after {
@@ -4128,7 +4136,7 @@ button,
     left: 0;
     width: calc(100% + 30px);
     height: 1px;
-    background-color: #0266c1;
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .education-process__item:nth-child(3n) {
     -ms-grid-column: 2;
@@ -4154,7 +4162,7 @@ button,
     left: 7px;
     width: 1px;
     height: 50px;
-    background-color: #0266c1;
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .education-process__item:nth-child(4n)::before {
     content: "";
@@ -4172,7 +4180,7 @@ button,
     left: 0;
     width: calc(100% + 30px);
     height: 1px;
-    background-color: #0266c1;
+    background-color: rgba(2, 102, 193, 0.1);
   }
 }
 @media (max-width: 767px) {
@@ -4196,7 +4204,7 @@ button,
     top: 0;
     width: 1px;
     height: 100%;
-    background-color: #0266c1;
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .education-process__item:first-child::after {
     content: "";
@@ -4205,7 +4213,7 @@ button,
     top: 50%;
     width: 1px;
     height: 50%;
-    background-color: #0266c1;
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .education-process__item:last-child::after {
     content: "";
@@ -4214,7 +4222,7 @@ button,
     top: 0;
     width: 1px;
     height: 50%;
-    background-color: #0266c1;
+    background-color: rgba(2, 102, 193, 0.1);
   }
 }
 
@@ -4232,6 +4240,10 @@ button,
 
 .education-process__item h4 {
   margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 @media (max-width: 1199px) {
   .education-process__item h4 {

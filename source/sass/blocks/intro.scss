@@ -72,6 +72,10 @@
 }
 
 .intro__wrapper {
+  background: $gradient-black-opacity33-white;
+}
+
+.intro__container {
   padding: 183px 0 82px;
 
   @include vp-1199 {

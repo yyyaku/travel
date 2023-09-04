@@ -70,7 +70,6 @@
   // синяя линия на планшете
   @include vp-1199 {
     &:first-child {
-
       // синяя линия
       &::after {
         content: "";
@@ -79,7 +78,7 @@
         left: 0;
         width: calc(100% + 30px);
         height: 1px;
-        background-color: $color-bright-blue;
+        background-color: $color-bright-blue-opacity10;
       }
     }
 
@@ -106,12 +105,11 @@
         left: 7px;
         width: 1px;
         height: 50px;
-        background-color: $color-bright-blue;
+        background-color: $color-bright-blue-opacity10;
       }
     }
 
     &:nth-child(4n) {
-
       // синий круг
       &::before {
         content: "";
@@ -131,7 +129,7 @@
         left: 0;
         width: calc(100% + 30px);
         height: 1px;
-        background-color: $color-bright-blue;
+        background-color: $color-bright-blue-opacity10;
       }
     }
   }
@@ -161,7 +159,7 @@
         top: 0;
         width: 1px;
         height: 100%;
-        background-color: $color-bright-blue;
+        background-color: $color-bright-blue-opacity10;
       }
     }
 
@@ -173,7 +171,7 @@
         top: 50%;
         width: 1px;
         height: 50%;
-        background-color: $color-bright-blue;
+        background-color: $color-bright-blue-opacity10;
       }
     }
 
@@ -185,7 +183,7 @@
         top: 0;
         width: 1px;
         height: 50%;
-        background-color: $color-bright-blue;
+        background-color: $color-bright-blue-opacity10;
       }
     }
   }
@@ -202,6 +200,10 @@
 
 .education-process__item h4 {
   margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 
   @include vp-1199 {
     max-width: 220px;

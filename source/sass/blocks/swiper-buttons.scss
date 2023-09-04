@@ -69,18 +69,22 @@
 }
 
 .swiper-buttons__arrow {
+  position: absolute;
+  top: 14.5px;
   display: inline-flex;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   cursor: pointer;
   border-top: 1px solid $color-default-white;
   border-right: 1px solid $color-default-white;
 
   &--prev {
+    left: 11px;
     transform: rotate(-135deg);
   }
 
   &--next {
+    right: 11px;
     transform: rotate(45deg);
   }
 }
