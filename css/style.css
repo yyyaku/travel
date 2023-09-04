@@ -4160,6 +4160,7 @@ button,
 
 .contacts__content h3::before {
   position: absolute;
+  bottom: 0;
   content: "Контакты";
   min-width: 100%;
   color: rgba(45, 56, 63, 0.03);
@@ -4214,7 +4215,7 @@ button,
   line-height: 18px;
 }
 
-.contacts__item p {
+.contacts__item span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -5166,7 +5167,7 @@ button,
     line-height: 16px;
   }
 
-  .contacts__item p {
+  .contacts__item span {
     font-size: 14px;
     line-height: 22px;
   }
@@ -5193,6 +5194,7 @@ button,
   .footer-header__logo svg {
     width: 118px;
     height: 34px;
+    margin: 5px 0 -5px;
   }
 
   .footer-header__list {
@@ -5508,14 +5510,34 @@ button,
     background-color: #0266c1;
   }
 
+  .education-process__item:nth-child(1n):not(:first-child):not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #0266c1;
+  }
+
   .education-process__item:first-child::after {
-    height: 50%;
+    content: "";
+    position: absolute;
+    left: -27px;
     top: 50%;
+    width: 1px;
+    height: 50%;
+    background-color: #0266c1;
   }
 
   .education-process__item:last-child::after {
-    height: 50%;
+    content: "";
+    position: absolute;
+    left: -27px;
     top: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #0266c1;
   }
 
   .education-process__item svg {
@@ -5762,7 +5784,7 @@ button,
     line-height: 14px;
   }
 
-  .contacts__item p {
+  .contacts__item span {
     max-width: 160px;
     line-height: 20px;
   }
@@ -5805,6 +5827,7 @@ button,
   .footer-header__logo svg {
     width: 112px;
     height: 34px;
+    margin: 5px 0 -5px 5px;
   }
 
   .footer-header__nav {
@@ -5836,17 +5859,5 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
     margin: 0 0 20px 5px;
-  }
-}
-
-@media (max-width: 767px) and (max-width: 767px) {
-  .education-process__item:nth-child(1n)::after {
-    content: "";
-    position: absolute;
-    left: -27px;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background-color: #0266c1;
   }
 }
