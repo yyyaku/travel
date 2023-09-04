@@ -1,3 +1,6 @@
+import {deleteVideoPlayer} from '../intro/init-video-player';
+import {deleteAudioPlayer} from '../intro/init-audio-player';
+
 const sliderIntro = document.querySelector('.intro__swiper');
 const intro = document.querySelector('.intro');
 
@@ -31,6 +34,8 @@ const initSliderIntro = () => {
     swiper.on('slideChange', function () {
 
       const activeSlide = document.querySelector('.swiper-slide-active');
+      deleteVideoPlayer();
+      deleteAudioPlayer();
 
       if (activeSlide.classList.contains('intro__item--kamchatka')) {
         intro.classList.add('intro--kamchatka');
