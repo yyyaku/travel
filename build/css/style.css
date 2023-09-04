@@ -4189,9 +4189,7 @@ button,
     border-radius: 50%;
     background-color: #0266c1;
   }
-}
-@media (max-width: 767px) and (max-width: 767px) {
-  .education-process__item:nth-child(1n)::after {
+  .education-process__item:nth-child(1n):not(:first-child):not(:last-child)::after {
     content: "";
     position: absolute;
     left: -27px;
@@ -4200,17 +4198,23 @@ button,
     height: 100%;
     background-color: #0266c1;
   }
-}
-@media (max-width: 767px) {
   .education-process__item:first-child::after {
-    height: 50%;
+    content: "";
+    position: absolute;
+    left: -27px;
     top: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .education-process__item:last-child::after {
+    width: 1px;
     height: 50%;
+    background-color: #0266c1;
+  }
+  .education-process__item:last-child::after {
+    content: "";
+    position: absolute;
+    left: -27px;
     top: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #0266c1;
   }
 }
 
@@ -5271,6 +5275,7 @@ button,
 }
 .contacts__content h3::before {
   position: absolute;
+  bottom: 0;
   content: "Контакты";
   min-width: 100%;
   color: rgba(45, 56, 63, 0.03);
@@ -5407,7 +5412,7 @@ button,
   }
 }
 
-.contacts__item p {
+.contacts__item span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -5417,13 +5422,13 @@ button,
   margin: 0;
 }
 @media (max-width: 1199px) {
-  .contacts__item p {
+  .contacts__item span {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media (max-width: 767px) {
-  .contacts__item p {
+  .contacts__item span {
     max-width: 160px;
     line-height: 20px;
   }
@@ -5603,12 +5608,14 @@ button,
   .footer-header__logo svg {
     width: 118px;
     height: 34px;
+    margin: 5px 0 -5px;
   }
 }
 @media (max-width: 767px) {
   .footer-header__logo svg {
     width: 112px;
     height: 34px;
+    margin: 5px 0 -5px 5px;
   }
 }
 
