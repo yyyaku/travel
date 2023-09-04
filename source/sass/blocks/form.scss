@@ -88,7 +88,7 @@
 
 .form__wrapper form {
   display: grid;
-  grid-template-columns: 1fr 238px;
+  grid-template-columns: auto minmax(120px, 238px);
   gap: 0 30px;
   min-height: 89px;
 
