@@ -2443,7 +2443,7 @@ button,
 }
 @media (max-width: 767px) {
   .intro__swiper {
-    padding: 0 0 123px;
+    min-height: 389px;
   }
 }
 
@@ -2679,7 +2679,7 @@ button,
 }
 @media (max-width: 767px) {
   .main-nav__toggle {
-    top: 2px;
+    top: 0;
   }
 }
 
@@ -2779,8 +2779,8 @@ button,
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    gap: 26px 0;
-    padding: 124px 45px 70px;
+    gap: 18px 0;
+    padding: 121px 40px 70px;
     max-width: 100%;
     width: 100%;
     background-color: #ffffff;
@@ -2788,7 +2788,8 @@ button,
 }
 @media (max-width: 767px) {
   .main-nav--opened .site-list {
-    padding: 100px 15px 50px;
+    gap: 14px 0;
+    padding: 95px 10px 50px;
   }
 }
 
@@ -2808,6 +2809,13 @@ button,
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+  }
+}
+@media (max-width: 767px) {
+  .site-list__link {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
   }
 }
 .site-list__link:hover {
@@ -3466,6 +3474,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__header h2::before {
+    top: 0;
     min-width: 290px;
     font-size: 26px;
     line-height: 26px;
@@ -4282,7 +4291,7 @@ button,
   .about__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 6px 0 62px;
+    padding: 6px 0 61px;
   }
 }
 
@@ -4380,7 +4389,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__item:first-child {
-    margin: 0 0 42px;
+    margin: 0 0 44px;
   }
 }
 
@@ -4441,6 +4450,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__header h2 {
+    margin: 10px 0 -10px;
     font-size: 22px;
     line-height: 22px;
   }
