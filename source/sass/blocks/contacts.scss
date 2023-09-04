@@ -38,6 +38,7 @@
 
   &::before {
     position: absolute;
+    bottom: 0;
     content: "Контакты";
     min-width: 100%;
     color: $color-granite-opacity3;
@@ -141,7 +142,7 @@
   }
 }
 
-.contacts__item p {
+.contacts__item span {
   grid-column: 2/3;
   grid-row: 2/3;
   margin: 0;
