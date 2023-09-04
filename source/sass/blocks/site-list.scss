@@ -18,15 +18,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 26px 0;
-    padding: 124px 45px 70px;
+    gap: 18px 0;
+    padding: 121px 40px 70px;
     max-width: 100%;
     width: 100%;
     background-color: $color-default-white;
   }
 
   @include vp-767 {
-    padding: 100px 15px 50px;
+    gap: 14px 0;
+    padding: 95px 10px 50px;
   }
 }
 
@@ -46,6 +47,12 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
   }
 
   @include hover {
