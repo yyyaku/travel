@@ -3689,6 +3689,16 @@ button,
 @media (max-width: 1199px) {
   .tour-card__link {
     padding: 23px 22px 23px 20px;
+    min-width: 324px;
+    min-height: 412px;
+    aspect-ratio: 324/412;
+  }
+}
+@media (max-width: 767px) {
+  .tour-card__link {
+    min-width: 290px;
+    min-height: 412px;
+    aspect-ratio: 290/412;
   }
 }
 
@@ -3701,13 +3711,9 @@ button,
 }
 @media (max-width: 767px) {
   .tour-card__link h3 {
+    margin: 0 0 30px;
     font-size: 20px;
     line-height: 24px;
-  }
-}
-@media (max-width: 767px) {
-  .tour-card__link h3 {
-    margin: 0 0 30px;
   }
 }
 .tour-card__link h3::before {
