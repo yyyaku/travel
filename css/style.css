@@ -2611,12 +2611,15 @@ button,
 .intro-header--opened {
   position: absolute;
   height: 100%;
-  z-index: 3;
+}
+
+.intro-header--opened .intro-header__logo {
+  z-index: 5;
 }
 
 .intro-header--opened .intro-header__link {
   color: #2d383f;
-  z-index: 3;
+  z-index: 4;
 }
 
 .intro-header--opened .intro-header__link:hover {
@@ -2640,6 +2643,10 @@ button,
   color: rgba(255, 255, 255, 0.1);
 }
 
+.intro-header--opened .main-nav__toggle {
+  z-index: 6;
+}
+
 .intro-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2654,6 +2661,7 @@ button,
   margin: 0 auto;
   padding: 37px 120px 0;
   max-width: 1440px;
+  z-index: 4;
 }
 
 .intro-header__info {
@@ -2711,7 +2719,7 @@ button,
 }
 
 .main-nav--opened {
-  z-index: 3;
+  z-index: 4;
 }
 
 .main-nav--opened .main-nav__toggle::before,
@@ -2722,6 +2730,7 @@ button,
   width: 28px;
   height: 2px;
   background-color: #2d383f;
+  z-index: 6;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -4657,6 +4666,7 @@ button,
     max-width: 100%;
     width: 100%;
     background-color: #ffffff;
+    z-index: 5;
   }
 
   .site-list__link {
