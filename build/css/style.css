@@ -2517,7 +2517,6 @@ button,
 .intro-header--opened {
   position: absolute;
   height: 100%;
-  z-index: 3;
 }
 .intro-header--opened .intro-header__link {
   color: #2d383f;
@@ -5653,7 +5652,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 150px;
   grid-template-columns: 1fr 150px;
-  gap: 10px;
+  gap: 8px;
   margin: 0 0 10px;
 }
 @media (max-width: 1199px) {
@@ -5679,6 +5678,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 8px;
   max-width: 891px;
 }
 @media (max-width: 1199px) {

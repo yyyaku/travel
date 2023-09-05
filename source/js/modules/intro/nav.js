@@ -15,11 +15,21 @@ const navButtonClick = () => {
   navMain.classList.remove('main-nav--nojs');
 
   navToggle.addEventListener('click', function () {
-    closeMenu();
+    navMain.classList.toggle('main-nav--closed');
+    navMain.classList.toggle('main-nav--opened');
+    introHeader.classList.toggle('intro-header--opened');
+    introLogo.classList.toggle('logo--dark');
+    overlay.classList.toggle('overlay--opened');
+    body.classList.toggle('menu--opened');
   });
 
   overlay.addEventListener('click', function () {
-    closeMenu();
+    navMain.classList.toggle('main-nav--closed');
+    navMain.classList.toggle('main-nav--opened');
+    introHeader.classList.toggle('intro-header--opened');
+    introLogo.classList.toggle('logo--dark');
+    overlay.classList.toggle('overlay--opened');
+    body.classList.toggle('menu--opened');
   });
 
   siteLinkTours.addEventListener('click', function () {
@@ -43,12 +53,12 @@ const navButtonClick = () => {
 };
 
 const closeMenu = () => {
-  navMain.classList.toggle('main-nav--closed');
-  navMain.classList.toggle('main-nav--opened');
-  introHeader.classList.toggle('intro-header--opened');
-  introLogo.classList.toggle('logo--dark');
-  overlay.classList.toggle('overlay--opened');
-  body.classList.toggle('menu--opened');
+  navMain.classList.add('main-nav--closed');
+  navMain.classList.remove('main-nav--opened');
+  introHeader.classList.remove('intro-header--opened');
+  introLogo.classList.remove('logo--dark');
+  overlay.classList.remove('overlay--opened');
+  body.classList.remove('menu--opened');
 };
 
 export {navButtonClick};
