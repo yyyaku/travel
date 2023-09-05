@@ -17,6 +17,10 @@
   }
 }
 
+.menu--opened {
+  overflow: hidden;
+}
+
 .rouble {
   font-family: $ff-montserrat;
   /* stylelint-disable */

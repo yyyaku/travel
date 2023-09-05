@@ -2087,6 +2087,10 @@ button,
           flex-grow: 1;
 }
 
+.menu--opened {
+  overflow: hidden;
+}
+
 .rouble {
   font-family: "Montserrat", "Arial", "sans-serif";
   /* stylelint-disable */
@@ -2192,6 +2196,17 @@ button,
   background-color: rgba(2, 102, 193, 0.1);
   border: 1px solid transparent;
   cursor: not-allowed;
+}
+
+.overlay--opened {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: block;
 }
 
 .logo {
@@ -2508,7 +2523,6 @@ button,
 .intro-header--opened {
   position: absolute;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
 .intro-header--opened .intro-header__link {
