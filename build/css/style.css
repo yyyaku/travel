@@ -2429,20 +2429,6 @@ button,
   background: linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
 }
 
-.intro__container {
-  padding: 183px 0 82px;
-}
-@media (max-width: 1199px) {
-  .intro__container {
-    padding: 174px 0 90px;
-  }
-}
-@media (max-width: 767px) {
-  .intro__container {
-    padding: 139px 0 40px;
-  }
-}
-
 .intro__swiper {
   position: relative;
 }
@@ -2499,6 +2485,20 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.intro__item {
+  padding: 183px 0 82px;
+}
+@media (max-width: 1199px) {
+  .intro__item {
+    padding: 174px 0 90px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__item {
+    padding: 139px 0 40px;
+  }
 }
 
 .intro-header {

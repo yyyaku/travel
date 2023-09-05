@@ -11,6 +11,7 @@ const initSliderGallery = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
+      allowTouchMove: true,
 
       breakpoints: {
         1200: {
@@ -22,13 +23,11 @@ const initSliderGallery = () => {
         768: {
           slidesPerView: 1.32,
           spaceBetween: 5,
-          allowTouchMove: false,
         },
 
         320: {
           slidesPerView: 0.96,
           spaceBetween: 20,
-          allowTouchMove: true,
         },
       },
     });

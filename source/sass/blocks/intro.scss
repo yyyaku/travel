@@ -75,18 +75,6 @@
   background: $gradient-black-opacity33-white;
 }
 
-.intro__container {
-  padding: 183px 0 82px;
-
-  @include vp-1199 {
-    padding: 174px 0 90px;
-  }
-
-  @include vp-767 {
-    padding: 139px 0 40px;
-  }
-}
-
 .intro__swiper {
   position: relative;
 
@@ -133,4 +121,16 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.intro__item {
+  padding: 183px 0 82px;
+
+  @include vp-1199 {
+    padding: 174px 0 90px;
+  }
+
+  @include vp-767 {
+    padding: 139px 0 40px;
+  }
 }

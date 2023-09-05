@@ -10,6 +10,7 @@ const initSliderIntro = () => {
     const swiper = new Swiper(sliderIntro, {
 
       loop: true,
+      allowTouchMove: true,
 
       slidesPerView: 1,
       spaceBetween: 40,
@@ -21,12 +22,8 @@ const initSliderIntro = () => {
       },
 
       breakpoints: {
-        768: {
+        1200: {
           allowTouchMove: false,
-        },
-
-        320: {
-          allowTouchMove: true,
         },
       },
     });
