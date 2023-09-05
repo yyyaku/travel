@@ -86,7 +86,11 @@
       grid-column: 2/3;
       grid-row: 2/3;
 
-      svg,
+      svg {
+        align-self: start;
+        margin: 10px 0 0;
+      }
+
       h4 {
         align-self: start;
       }
@@ -115,7 +119,11 @@
     }
 
     &:nth-child(4n) {
-      svg,
+      svg {
+        align-self: start;
+        margin: 10px 0 0;
+      }
+
       h4 {
         align-self: start;
       }
@@ -149,6 +157,7 @@
       svg,
       h4 {
         align-self: center;
+        margin: 0;
       }
       // синий круг
       &::before {
@@ -208,7 +217,6 @@
   margin: 0 0 10px;
 
   @include vp-767 {
-    margin: 0;
     width: 19px;
     height: 19px;
   }
