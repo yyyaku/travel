@@ -2550,7 +2550,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 10px;
+  gap: 0 5px;
   margin: 0 auto;
   padding: 37px 120px 0;
   max-width: 1440px;
@@ -2945,7 +2945,7 @@ button,
 
 .intro-main__text a {
   min-width: 220px;
-  max-width: 600px;
+  max-width: 400px;
 }
 @media (max-width: 1199px) {
   .intro-main__text a {
@@ -4253,9 +4253,11 @@ button,
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  margin: 0 0 10px;
 }
 @media (max-width: 767px) {
   .education-process__item svg {
+    margin: 0;
     width: 19px;
     height: 19px;
   }
@@ -4608,7 +4610,7 @@ button,
         -ms-grid-row-align: center;
         align-self: center;
     margin: 0 0 17px;
-    min-width: 250px;
+    min-width: 100%;
     min-height: 169px;
     aspect-ratio: 250/169;
   }
@@ -4629,9 +4631,10 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 24px 0;
   padding: 15px 0 10px;
 }
 @media (max-width: 1199px) {
@@ -4642,6 +4645,20 @@ button,
 @media (max-width: 767px) {
   .reviews-card__info {
     gap: 15px 0;
+  }
+}
+
+.reviews-card__text {
+  min-height: 164px;
+}
+@media (max-width: 1199px) {
+  .reviews-card__text {
+    min-height: 172px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-card__text {
+    min-height: 190px;
   }
 }
 
@@ -5478,6 +5495,13 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
 }
 @media (max-width: 1199px) {
