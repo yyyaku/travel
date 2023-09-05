@@ -28,6 +28,7 @@ const initSliderReviews = () => {
           slidesPerView: 1,
           spaceBetween: 30,
           allowTouchMove: true,
+          autoHeight: true,
         },
       },
     });
