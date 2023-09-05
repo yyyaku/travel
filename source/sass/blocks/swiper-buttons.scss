@@ -55,6 +55,7 @@
 
   @include disabled {
     background-color: $color-bright-blue-opacity10;
+    border: 1px solid transparent;
     cursor: not-allowed;
 
     &::before {
@@ -64,6 +65,7 @@
     .swiper-buttons__arrow {
       border-top: 1px solid $color-default-white;
       border-right: 1px solid $color-default-white;
+      cursor: not-allowed;
     }
   }
 }

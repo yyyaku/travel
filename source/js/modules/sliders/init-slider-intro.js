@@ -38,21 +38,21 @@ const initSliderIntro = () => {
       deleteAudioPlayer();
 
       if (activeSlide.classList.contains('intro__item--kamchatka')) {
-        intro.classList.add('intro--kamchatka');
-        intro.classList.remove('intro--caucasus');
-        intro.classList.remove('intro--altai');
-      }
-
-      if (activeSlide.classList.contains('intro__item--altai')) {
         intro.classList.add('intro--altai');
         intro.classList.remove('intro--caucasus');
         intro.classList.remove('intro--kamchatka');
       }
 
-      if (activeSlide.classList.contains('intro__item--caucasus')) {
+      if (activeSlide.classList.contains('intro__item--altai')) {
         intro.classList.add('intro--caucasus');
         intro.classList.remove('intro--altai');
         intro.classList.remove('intro--kamchatka');
+      }
+
+      if (activeSlide.classList.contains('intro__item--caucasus')) {
+        intro.classList.add('intro--kamchatka');
+        intro.classList.remove('intro--caucasus');
+        intro.classList.remove('intro--altai');
       }
     });
   }

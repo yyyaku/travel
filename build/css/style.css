@@ -2294,6 +2294,7 @@ button,
 }
 .swiper-buttons__button:disabled {
   background-color: rgba(2, 102, 193, 0.1);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 .swiper-buttons__button:disabled::before {
@@ -2302,6 +2303,7 @@ button,
 .swiper-buttons__button:disabled .swiper-buttons__arrow {
   border-top: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
+  cursor: not-allowed;
 }
 
 .swiper-buttons__arrow {
@@ -3073,14 +3075,14 @@ button,
           transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-top: 8px solid transparent;
-  border-left: 16px solid #000000;
-  border-bottom: 8px solid transparent;
+  border-top: 12px solid transparent;
+  border-left: 10px solid #000000;
+  border-bottom: 12px solid transparent;
 }
 .intro-video__wrapper button:hover::before {
-  border-top: 7px solid transparent;
-  border-left: 14px solid #ffffff;
-  border-bottom: 7px solid transparent;
+  border-top: 11px solid transparent;
+  border-left: 9px solid #ffffff;
+  border-bottom: 11px solid transparent;
   z-index: 3;
 }
 .intro-video__wrapper button:focus-visible {
@@ -3098,14 +3100,14 @@ button,
           transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-top: 8px solid transparent;
-  border-left: 16px solid #000000;
-  border-bottom: 8px solid transparent;
+  border-top: 12px solid transparent;
+  border-left: 10px solid #000000;
+  border-bottom: 12px solid transparent;
 }
 .intro-video__wrapper button:focus-visible::before {
-  border-top: 7px solid transparent;
-  border-left: 14px solid #ffffff;
-  border-bottom: 7px solid transparent;
+  border-top: 11px solid transparent;
+  border-left: 9px solid #ffffff;
+  border-bottom: 11px solid transparent;
   z-index: 3;
 }
 .intro-video__wrapper button:focus {
@@ -3120,9 +3122,9 @@ button,
   border: 1px solid rgba(2, 102, 193, 0.1);
 }
 .intro-video__wrapper button:disabled::before {
-  border-top: 8px solid transparent;
-  border-left: 16px solid rgba(2, 102, 193, 0.1);
-  border-bottom: 8px solid transparent;
+  border-top: 12px solid transparent;
+  border-left: 10px solid rgba(2, 102, 193, 0.1);
+  border-bottom: 12px solid transparent;
 }
 
 .intro-photo {
