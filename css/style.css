@@ -2613,13 +2613,9 @@ button,
   height: 100%;
 }
 
-.intro-header--opened .intro-header__logo {
-  z-index: 5;
-}
-
 .intro-header--opened .intro-header__link {
   color: #2d383f;
-  z-index: 4;
+  z-index: 3;
 }
 
 .intro-header--opened .intro-header__link:hover {
@@ -2643,10 +2639,6 @@ button,
   color: rgba(255, 255, 255, 0.1);
 }
 
-.intro-header--opened .main-nav__toggle {
-  z-index: 6;
-}
-
 .intro-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2657,11 +2649,10 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0 10px;
+  gap: 0 5px;
   margin: 0 auto;
   padding: 37px 120px 0;
   max-width: 1440px;
-  z-index: 4;
 }
 
 .intro-header__info {
@@ -2719,7 +2710,7 @@ button,
 }
 
 .main-nav--opened {
-  z-index: 4;
+  z-index: 3;
 }
 
 .main-nav--opened .main-nav__toggle::before,
@@ -2730,7 +2721,6 @@ button,
   width: 28px;
   height: 2px;
   background-color: #2d383f;
-  z-index: 6;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -2845,7 +2835,7 @@ button,
 
 .intro-main__text a {
   min-width: 220px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .intro-main__details {
@@ -3640,6 +3630,7 @@ button,
   -ms-flex-item-align: end;
   -ms-grid-row-align: end;
   align-self: end;
+  margin: 0 0 10px;
 }
 
 .education-process__item h4 {
@@ -3818,10 +3809,15 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 24px 0;
   padding: 15px 0 10px;
+}
+
+.reviews-card__text {
+  min-height: 164px;
 }
 
 .reviews-card__text p {
@@ -4187,7 +4183,7 @@ button,
   -ms-grid-columns: 1fr 585px;
   grid-template-columns: 1fr 585px;
   gap: 0 132px;
-  padding: 82px 0 104px;
+  padding: 84px 0 104px;
 }
 
 .contacts__content h3 {
@@ -4211,7 +4207,7 @@ button,
 }
 
 .contacts__content p {
-  margin: 0 0 50px;
+  margin: 0 0 49px;
 }
 
 .contacts__list {
@@ -4231,38 +4227,30 @@ button,
 }
 
 .contacts__item {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 26px 1fr;
-  grid-template-columns: 26px 1fr;
-  gap: 8px 30px;
-}
-
-.contacts__item svg {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  -ms-grid-row-align: center;
-  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .contacts__item h4 {
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
 }
 
 .contacts__item span {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -4372,7 +4360,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 150px;
   grid-template-columns: 1fr 150px;
-  gap: 10px;
+  gap: 8px;
   margin: 0 0 10px;
 }
 
@@ -4386,6 +4374,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 8px;
   max-width: 891px;
 }
 
@@ -4448,6 +4437,7 @@ button,
 }
 
 .footer-header__info a {
+  margin: 0 -7px 0 7px;
   color: #2d383f;
   font-size: 18px;
   font-weight: 600;
@@ -4661,12 +4651,15 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     gap: 18px 0;
     padding: 121px 40px 70px;
     max-width: 100%;
     width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
     background-color: #ffffff;
-    z-index: 5;
   }
 
   .site-list__link {
@@ -4908,7 +4901,13 @@ button,
     grid-row: 2/3;
   }
 
-  .education-process__item:nth-child(3n) svg,
+  .education-process__item:nth-child(3n) svg {
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    margin: 10px 0 0;
+  }
+
   .education-process__item:nth-child(3n) h4 {
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
@@ -4935,7 +4934,13 @@ button,
     background-color: rgba(2, 102, 193, 0.1);
   }
 
-  .education-process__item:nth-child(4n) svg,
+  .education-process__item:nth-child(4n) svg {
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    margin: 10px 0 0;
+  }
+
   .education-process__item:nth-child(4n) h4 {
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
@@ -5042,6 +5047,10 @@ button,
 
   .reviews-card__info {
     padding: 2px 0 0;
+  }
+
+  .reviews-card__text {
+    min-height: 172px;
   }
 
   .reviews-card__text p {
@@ -5216,20 +5225,19 @@ button,
   }
 
   .contacts__item {
-    -ms-grid-columns: 24px 1fr;
-    grid-template-columns: 24px 1fr;
-    gap: 6px 10px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px;
   }
 
-  .contacts__item svg {
+  .contacts__item-icon svg {
     width: 24px;
     height: 24px;
-    -ms-flex-item-align: start;
-    -ms-grid-row-align: start;
-    align-self: start;
   }
 
   .contacts__item h4 {
+    margin: 0 0 4px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -5570,6 +5578,7 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    margin: 0;
   }
 
   .education-process__item:nth-child(1n)::before {
@@ -5704,13 +5713,17 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     margin: 0 0 17px;
-    min-width: 250px;
+    min-width: 100%;
     min-height: 169px;
     aspect-ratio: 250/169;
   }
 
   .reviews-card__info {
     gap: 15px 0;
+  }
+
+  .reviews-card__text {
+    min-height: 190px;
   }
 
   .reviews-card__name h3 {
@@ -5859,12 +5872,13 @@ button,
     gap: 8px;
   }
 
-  .contacts__item svg {
+  .contacts__item-icon svg {
     width: 22px;
     height: 22px;
   }
 
   .contacts__item h4 {
+    margin: 0 0 8px;
     font-size: 14px;
     line-height: 14px;
   }
