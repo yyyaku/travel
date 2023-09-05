@@ -18,7 +18,7 @@
   height: 459px;
 
   @include vp-1199 {
-    margin: 0 auto;
+    margin: 0 auto -65px;
     width: 442px;
     height: 365px;
   }
@@ -26,7 +26,7 @@
 
 .intro-photo__primary {
   position: absolute;
-  top: 112px;
+  top: 189px;
   right: 0;
 
   @include vp-1199 {
@@ -38,7 +38,7 @@
 
 .intro-photo__secondary {
   position: absolute;
-  top: 19px;
+  top: 96px;
   left: 0;
   z-index: -1;
 
