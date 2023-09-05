@@ -12,7 +12,6 @@ const initSliderReviews = () => {
         prevEl: buttonPrev,
       },
       allowTouchMove: false,
-      autoHeight: true,
 
       breakpoints: {
         1200: {

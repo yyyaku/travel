@@ -1,6 +1,7 @@
 .instructor-card {
   padding: 20px;
   min-height: 377px;
+  height: auto;
   box-shadow: 0 0 30px $color-midnight-blue-opacity10;
 
   @include vp-1199 {

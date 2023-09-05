@@ -10,12 +10,14 @@
   gap: 0 30px;
   margin: 0;
   padding: 0;
+  min-width: 540px;
   width: 100%;
   list-style-type: none;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
     gap: 9px 0;
+    min-width: 100%;
   }
 }
 

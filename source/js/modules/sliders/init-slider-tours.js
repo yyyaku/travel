@@ -11,6 +11,7 @@ const initSliderTours = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
+      allowTouchMove: true,
 
       breakpoints: {
         1200: {
@@ -22,13 +23,11 @@ const initSliderTours = () => {
         768: {
           slidesPerView: 2,
           spaceBetween: 18,
-          allowTouchMove: false,
         },
 
         320: {
           slidesPerView: 1,
           spaceBetween: 20,
-          allowTouchMove: true,
         },
       },
     });

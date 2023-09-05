@@ -1,6 +1,6 @@
 .intro-audio {
   position: absolute;
-  top: 118px;
+  top: 195px;
   right: 0;
 
   @include vp-1199 {
@@ -19,7 +19,7 @@
   background-color: $color-periwinkle-crayola-opacity90;
 
   @include vp-1199 {
-    margin: 70px auto 0;
+    margin: 70px auto 60px;
   }
 }
 

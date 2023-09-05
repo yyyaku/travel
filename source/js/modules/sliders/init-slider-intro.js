@@ -10,6 +10,7 @@ const initSliderIntro = () => {
     const swiper = new Swiper(sliderIntro, {
 
       loop: true,
+      allowTouchMove: true,
 
       slidesPerView: 1,
       spaceBetween: 40,
@@ -21,12 +22,8 @@ const initSliderIntro = () => {
       },
 
       breakpoints: {
-        768: {
+        1200: {
           allowTouchMove: false,
-        },
-
-        320: {
-          allowTouchMove: true,
         },
       },
     });
@@ -38,21 +35,21 @@ const initSliderIntro = () => {
       deleteAudioPlayer();
 
       if (activeSlide.classList.contains('intro__item--kamchatka')) {
-        intro.classList.add('intro--kamchatka');
-        intro.classList.remove('intro--caucasus');
-        intro.classList.remove('intro--altai');
-      }
-
-      if (activeSlide.classList.contains('intro__item--altai')) {
         intro.classList.add('intro--altai');
         intro.classList.remove('intro--caucasus');
         intro.classList.remove('intro--kamchatka');
       }
 
-      if (activeSlide.classList.contains('intro__item--caucasus')) {
+      if (activeSlide.classList.contains('intro__item--altai')) {
         intro.classList.add('intro--caucasus');
         intro.classList.remove('intro--altai');
         intro.classList.remove('intro--kamchatka');
+      }
+
+      if (activeSlide.classList.contains('intro__item--caucasus')) {
+        intro.classList.add('intro--kamchatka');
+        intro.classList.remove('intro--caucasus');
+        intro.classList.remove('intro--altai');
       }
     });
   }
