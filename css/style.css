@@ -4575,10 +4575,6 @@ button,
     padding: 94px 0 219px;
   }
 
-  .intro__item--opened {
-    padding: 94px 0 295px;
-  }
-
   .intro-header__wrapper {
     display: -ms-grid;
     display: grid;
@@ -4686,6 +4682,10 @@ button,
 
   .site-list__link:disabled {
     color: rgba(0, 0, 0, 0.5);
+  }
+
+  .intro-main--opened {
+    padding: 80px 0 0;
   }
 
   .intro-main__text {
@@ -5330,10 +5330,6 @@ button,
     padding: 68px 0 163px;
   }
 
-  .intro__item--opened {
-    padding: 68px 0 233px;
-  }
-
   .intro-header__wrapper {
     display: -ms-grid;
     display: grid;
@@ -5381,6 +5377,10 @@ button,
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
+  }
+
+  .intro-main--opened {
+    padding: 70px 0 0;
   }
 
   .intro-main__text {
