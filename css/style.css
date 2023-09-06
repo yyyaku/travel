@@ -4575,6 +4575,10 @@ button,
     padding: 94px 0 219px;
   }
 
+  .intro__item--opened {
+    padding: 94px 0 295px;
+  }
+
   .intro-header__wrapper {
     display: -ms-grid;
     display: grid;
@@ -5324,6 +5328,10 @@ button,
 
   .intro__item {
     padding: 68px 0 163px;
+  }
+
+  .intro__item--opened {
+    padding: 68px 0 233px;
   }
 
   .intro-header__wrapper {
