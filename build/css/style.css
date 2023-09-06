@@ -2549,7 +2549,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 5px;
+  gap: 0 3px;
   margin: 0 auto;
   padding: 37px 120px 0;
   max-width: 1440px;
@@ -4671,7 +4671,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews-card__text {
-    min-height: 190px;
+    min-height: 0;
   }
 }
 
