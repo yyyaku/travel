@@ -6,6 +6,16 @@
   display: none;
 }
 
+.intro-main--opened {
+  @include vp-1199 {
+    padding: 80px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0 0;
+  }
+}
+
 .intro-main__text {
   position: relative;
   display: flex;

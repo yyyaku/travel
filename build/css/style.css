@@ -2876,6 +2876,17 @@ button,
   display: none;
 }
 
+@media (max-width: 1199px) {
+  .intro-main--opened {
+    padding: 80px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro-main--opened {
+    padding: 70px 0 0;
+  }
+}
+
 .intro-main__text {
   position: relative;
   display: -webkit-box;

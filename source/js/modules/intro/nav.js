@@ -3,6 +3,7 @@ const introLogo = document.querySelector('.intro-header__logo');
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 const overlay = document.querySelector('.overlay');
+const slide = document.querySelector('.intro-main');
 const body = document.querySelector('body');
 const siteLinkTours = document.querySelector('.site-list__link--tours');
 const siteLinkEducation = document.querySelector('.site-list__link--education');
@@ -21,6 +22,7 @@ const navButtonClick = () => {
     introLogo.classList.toggle('logo--dark');
     overlay.classList.toggle('overlay--opened');
     body.classList.toggle('menu--opened');
+    slide.classList.toggle('intro-main--opened');
   });
 
   overlay.addEventListener('click', function () {
@@ -30,6 +32,7 @@ const navButtonClick = () => {
     introLogo.classList.toggle('logo--dark');
     overlay.classList.toggle('overlay--opened');
     body.classList.toggle('menu--opened');
+    slide.classList.toggle('intro-main--opened');
   });
 
   siteLinkTours.addEventListener('click', function () {
@@ -59,6 +62,7 @@ const closeMenu = () => {
   introLogo.classList.remove('logo--dark');
   overlay.classList.remove('overlay--opened');
   body.classList.remove('menu--opened');
+  slide.classList.remove('intro-main--opened');
 };
 
 export {navButtonClick};
