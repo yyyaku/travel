@@ -11,12 +11,13 @@ const initSliderReviews = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
-      allowTouchMove: false,
+      allowTouchMove: true,
 
       breakpoints: {
         1200: {
           slidesPerView: 1.645,
           spaceBetween: 30,
+          allowTouchMove: false,
         },
 
         768: {
@@ -27,8 +28,6 @@ const initSliderReviews = () => {
         320: {
           slidesPerView: 1,
           spaceBetween: 30,
-          allowTouchMove: true,
-          autoHeight: true,
         },
       },
     });

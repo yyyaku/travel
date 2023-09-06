@@ -11,12 +11,13 @@ const initSliderInstructors = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
-      allowTouchMove: false,
+      allowTouchMove: true,
 
       breakpoints: {
         1200: {
           slidesPerView: 4,
           spaceBetween: 30,
+          allowTouchMove: false,
         },
 
         768: {
@@ -27,8 +28,6 @@ const initSliderInstructors = () => {
         320: {
           slidesPerView: 1,
           spaceBetween: 30,
-          allowTouchMove: true,
-          autoHeight: true,
         },
       },
     });
