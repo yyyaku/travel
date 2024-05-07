@@ -7,7 +7,7 @@ import {initSliderIntro} from './modules/sliders/init-slider-intro';
 import {initSliderTours} from './modules/sliders/init-slider-tours';
 import {initSliderInstructors} from './modules/sliders/init-slider-instructors';
 import {initSliderReviews} from './modules/sliders/init-slider-reviews';
-import {initSliderAdvantages} from './modules/sliders/init-slider-advantages';
+import './modules/sliders/init-slider-advantages';
 import {initSliderGallery} from './modules/sliders/init-slider-gallery';
 import {map} from './modules/map/map';
 
@@ -36,7 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderTours();
     initSliderInstructors();
     initSliderReviews();
-    initSliderAdvantages();
     initSliderGallery();
     map();
   });
